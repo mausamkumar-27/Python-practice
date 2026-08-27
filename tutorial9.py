@@ -1,0 +1,10 @@
+a="8"
+b=7
+c=int(a)
+d=c+b
+e=complex(4,5)
+print(d)
+print(type(a))
+print(type(b))
+print(type(d))
+print(type(e))
