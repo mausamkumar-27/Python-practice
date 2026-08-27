@@ -1,4 +1,4 @@
-a="8"
+a="8"  #String
 b=7
 c=int(a)
 d=c+b
