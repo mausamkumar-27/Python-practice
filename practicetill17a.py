@@ -20,8 +20,8 @@ match x:
     case 3:
         print("x is Three")  
     case _ if x<0:
-        print("x is Negative")   
+        print("x is Negative") 
     case _ if x%2==0:
-        print("x is Even") 
+            print("x is Even") 
     case _ :
         print("Not Matching")              
