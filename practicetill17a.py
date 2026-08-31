@@ -1,12 +1,11 @@
-n=input("Enter the Number: ")
-print(int(n))
+n=int(input("Enter the Number: "))
 if n>0 :
-    print("Positive",n)
+    print("Positive")
     if n%2==0:
-        print("Positive even",n)
+        print("Positive even")
     else:
-        print("Positive odd",n)  
+        print("Positive odd")  
 elif n==0:
     print("Zero",n)
 else:
-    print("Negative",n)             
+    print("Negative")             
