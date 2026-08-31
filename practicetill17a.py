@@ -10,4 +10,5 @@ elif n==0:
 else:
     print("Negative")    
 
-             
+    for i in range(10,2,-2):
+      print(i)        
