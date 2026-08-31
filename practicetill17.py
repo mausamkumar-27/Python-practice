@@ -6,3 +6,4 @@ s="Harry"
 print(s[::-1])       #Reverse wala pta kr
 a=" ###Hello World###  "
 print(a.strip())
+print(a.rstrip("#"))
