@@ -8,4 +8,6 @@ if n>0 :
 elif n==0:
     print("Zero",n)
 else:
-    print("Negative")             
+    print("Negative")    
+
+             
