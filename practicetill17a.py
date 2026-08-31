@@ -6,4 +6,7 @@ if n>0 :
         print("Positive even",n)
     else:
         print("Positive odd",n)  
-          
+elif n==0:
+    print("Zero",n)
+else:
+    print("Negative",n)             
