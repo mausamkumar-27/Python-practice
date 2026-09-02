@@ -7,6 +7,6 @@ squares=[l*l for l in range(6)]
 print(squares)
 evens=[i for i in range(11) if i%2==0]
 print(evens)
-names=["Mausam","Harry","Ali","Shubham"]
-name1=[name for name in names if len(name)<6]
-print(name1)
+all_students=["Mausam","Harry","Ali","Shubham"]
+short_list=[item for item in all_students if len(item)<4]
+print(short_list)
