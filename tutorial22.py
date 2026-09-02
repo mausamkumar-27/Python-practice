@@ -12,8 +12,9 @@ if "sam"in "Mausam":
     print("yes")
 else:
     print("no")  
-if 5 in 52:
+if "5" in str(52):
     print("YES")  
 else:
-    print("NO")        
+    print("NO") 
+
 
