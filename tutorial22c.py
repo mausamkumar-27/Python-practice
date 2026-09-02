@@ -1,0 +1,7 @@
+l=[3,6,7,8,1]
+l.sort()
+print(l)
+l.sort(reverse=True)
+print(l)
+l.reverse()
+print(l)
