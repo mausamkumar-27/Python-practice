@@ -8,8 +8,12 @@ if "Mausam" in l:
 else:
     print("Mausam is absent ")
 print(l[3]) 
-if "sam "in "Mausam":
+if "sam"in "Mausam":
     print("yes")
 else:
-    print("no")    
+    print("no")  
+if 5 in 52:
+    print("YES")  
+else:
+    print("NO")        
 
