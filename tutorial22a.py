@@ -7,3 +7,6 @@ squares=[l*l for l in range(6)]
 print(squares)
 evens=[i for i in range(11) if i%2==0]
 print(evens)
+names=["Mausam","Harry","Ali","Shubham"]
+name1=[name for name in names if len(names)<4]
+print(name1)
