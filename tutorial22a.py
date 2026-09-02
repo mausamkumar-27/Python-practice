@@ -8,5 +8,5 @@ print(squares)
 evens=[i for i in range(11) if i%2==0]
 print(evens)
 names=["Mausam","Harry","Ali","Shubham"]
-name1=[name for name in names if len(names)<4]
+name1=[name for name in names if len(names)<5]
 print(name1)
