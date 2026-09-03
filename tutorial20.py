@@ -11,4 +11,5 @@ def average(a=9,b=7):
 average(a,b)
 average(a,b=5)
 average(a=5,b=9)
+average()
 
