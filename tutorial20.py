@@ -3,8 +3,8 @@ def name(first_name,last_name):
 name(last_name="Kumar",first_name="Mausam")
 
 
-
-def average(a=9,b=1):
+a=int(input("Enter a No. "))
+def average(a,b=1):
     print("The averaage is: ",(a+b)/2)
 average()
 average(5)
