@@ -10,6 +10,6 @@ def average(a=9,b=7):
     print("The averaage is: ",(a+b)/2)
 average(a,b)
 average(a,b=5)
-average(a=3,b=9)
+average(a=7,b=9)
 average()
 
