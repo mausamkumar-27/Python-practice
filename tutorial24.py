@@ -3,9 +3,14 @@ print(type(a))
 b=(1,)
 print(type(b))
 
-name=("Mausam","Harry","Mansi","Aman","India")
+name=("Mausam","Harry","Mansi","Aman","India",2,4,3,2,2,2,)
 if "Mausam" in name:
     print("Yes,Mausam is Present")
 else:
     print("No,Mausam is absent")    
-name.index(0)    
+short=name.count("Mausam") 
+print(short) 
+
+star=name.index(2,4,9)
+print(star)
+
