@@ -17,5 +17,7 @@ print(star)
 
 countries=("India","China","Russia","Japan")
 c=list(countries)
-print(c)
 c.append("Spain")
+print(c)
+c.pop("China")
+print(c)
