@@ -8,3 +8,4 @@ if "Mausam" in name:
     print("Yes,Mausam is Present")
 else:
     print("No,Mausam is absent")    
+name.index(0)    
