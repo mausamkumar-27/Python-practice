@@ -23,7 +23,7 @@ c.insert(1,"America")
 print(c)
 c.pop(2)
 print(c)
-c[2]="Finland"
+c[2]="England"
 print(c)
 country=tuple(c)
 print(country)
