@@ -11,6 +11,6 @@ else:
 short=name.count("Mausam") 
 print(short) 
 
-star=name.index(2,4,9)
+star=name.index(2,8,9)
 print(star)
 
