@@ -14,3 +14,7 @@ print(short)
 star=name.index(2,8,9)
 print(star)
 
+
+countries=("India","China","Russia","Japan")
+
+
