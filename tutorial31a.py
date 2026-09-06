@@ -4,3 +4,5 @@ print(s1.union(s2))
 #print(s1.update(s2)).       Sir why return o/p as None
 s1.update(s2)
 print(s1)
+
+print(s1.intersection(s2))
