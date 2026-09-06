@@ -13,4 +13,4 @@ city2={"Patna","Indore","Wizag","Kota","Londan"}
 city=city1.intersection(city2)
 print(city)'''
 
-print(city1.intersection_update(city2))        #why again return o/p as None
+print(city1.intersection_update(city2))       #why again return o/p as None
