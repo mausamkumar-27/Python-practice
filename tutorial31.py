@@ -5,7 +5,9 @@ empty_set=set()
 print(type(empty_set))
 
 #l=["Mausam",2,4,3,9,2]
-
-s={2,4,2,5,7,9,7,"Mausam",True,[3,4,9]}
+#s={2,3,5,6,"Mausam",9,[8,4,5,"Mausam"]}
+s={2,4,5,3,5,"Mausam"}
 print(s)
 #s[2]
+
+
