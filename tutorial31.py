@@ -12,4 +12,7 @@ print(s)
 
 #accessing set element
 for i in s:
-    print(s)
+   # print(s)
+    print(i)
+if "Mausam" in s:
+    print("yes")
