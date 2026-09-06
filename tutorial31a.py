@@ -7,4 +7,6 @@ print(s1)
 
 #print(s1.intersection(s2)).      ye 'Kumar',19'76 etc. dega bcz s2 ka sara item uodate kr s1 me daal chuka hai
 
-city={}
+city1={"Delhi","Mumbai","Londan","Hydrabad","Kota"}
+city2={"Patna","Indore","Wizag","Kota","Londan"}
+print(city1.intersection(s2))
