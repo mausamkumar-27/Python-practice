@@ -10,4 +10,6 @@ s={2,4,5,3,5,"Mausam"}
 print(s)
 #s[2]
 
-
+#accessing set element
+for i in s:
+    print(s)
