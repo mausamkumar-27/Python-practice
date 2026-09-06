@@ -5,4 +5,6 @@ print(s1.union(s2))
 s1.update(s2)
 print(s1)
 
-print(s1.intersection(s2))
+#print(s1.intersection(s2)).      ye 'Kumar',19'76 etc. dega bcz s2 ka sara item uodate kr s1 me daal chuka hai
+
+city={}
