@@ -12,3 +12,5 @@ city2={"Patna","Indore","Wizag","Kota","Londan"}
 print(city1.intersection(s2))   #Why return o/p as empty set
 city=city1.intersection(city2)
 print(city)
+
+print(city1.intersection_update(city2))
