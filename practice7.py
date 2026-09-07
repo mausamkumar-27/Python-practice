@@ -6,8 +6,5 @@ print(s)
 #dic={s:name.count(name)}      cant use set as dict key
 dic={}
 for char in s:
-    print(char)
-
-dic={char:name.count(char)}
-print(dic)
+    dic[char]=name.count(char)
 
