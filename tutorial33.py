@@ -1,1 +1,6 @@
-dict={"Name":"Mausam","age":19,"State":"Bihar"}
+dict={"Name":"Mausam","age":19,"State":"Bihar","Pin":854104}
+print(type(dict))
+print(dict["Name"])
+#print(dict[school])              give Name Error
+print(dict.get("Name"))
+#print(dict.get("school"))        give None
