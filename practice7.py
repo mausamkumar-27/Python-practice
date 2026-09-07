@@ -1,7 +1,7 @@
 name="Mausam"
 s=set(name)
 print(s)
-#dic=dict(set)
+#dic=dict(s)
 #print(dic)
 #dic={s:name.count(name)}      cant use set as dict key
 d=dict(s)
