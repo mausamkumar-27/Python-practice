@@ -7,3 +7,6 @@ print(dict.get("Name"))
 print(dict.keys())
 print(dict.values())
 print(dict.items())
+
+for key in dict:
+    print(key)
