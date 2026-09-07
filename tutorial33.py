@@ -4,3 +4,6 @@ print(dict["Name"])
 #print(dict[school])              give Name Error
 print(dict.get("Name"))
 #print(dict.get("school"))        give None
+print(dict.keys())
+print(dict.values())
+print(dict.items())
