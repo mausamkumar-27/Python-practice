@@ -1,1 +1,1 @@
-dict={"Name:Mausam"}
+dict={"Name":"Mausam","age":19,"State":"Bihar"}
