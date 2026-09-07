@@ -10,5 +10,8 @@ print(dict.items())
 
 for key in dict:
     print(key)
-for value in dict:
-    print(value)
+'''for value in dict:
+    print(value)'''
+
+for key,value in dict.items():
+    print(f"{key}:{value}")
