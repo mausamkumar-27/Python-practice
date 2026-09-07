@@ -6,3 +6,4 @@ print(s)
 #dic={s:name.count(name)}      cant use set as dict key
 for char in s:
     print(char)
+d={s:name.count(name)}
