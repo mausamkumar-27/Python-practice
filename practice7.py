@@ -7,4 +7,4 @@ print(s)
 dic={}
 for char in s:
     dic[char]=name.count(char)
-
+print(dic.item())
