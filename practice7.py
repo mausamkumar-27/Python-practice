@@ -1,7 +1,8 @@
 name="Mausam"
 s=set(name)
 print(s)
-#dic=dict(s)
+#dic=dict(s))
 #print(dic)
 #dic={s:name.count(name)}      cant use set as dict key
-d=dict(s)
+d={char:name.count(char) for char in s}
+print(d)
