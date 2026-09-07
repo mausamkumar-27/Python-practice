@@ -8,3 +8,5 @@ dic={}
 for char in s:
     print(char)
 
+
+
