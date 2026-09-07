@@ -8,5 +8,6 @@ dic={}
 for char in s:
     print(char)
 
-
+dic={char:name.count(char)}
+print(dic)
 
