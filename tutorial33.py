@@ -10,3 +10,5 @@ print(dict.items())
 
 for key in dict:
     print(key)
+for value in dict:
+    print(value)
