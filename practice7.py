@@ -8,3 +8,5 @@ dic={}
 for char in s:
     dic[char]=name.count(char)
 print(dic.items())
+for key,value in dic.items():
+    print(f"{key}:{value}")
