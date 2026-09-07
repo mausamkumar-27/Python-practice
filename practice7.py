@@ -3,4 +3,4 @@ set=set(name)
 print(set)
 #dic=dict(set)
 #print(dic)
-dic={set:count(name)}
+dic={set:name.count(name)}
