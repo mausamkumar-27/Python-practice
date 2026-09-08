@@ -10,6 +10,3 @@ for fruit,(price,stock) in inventory.items():
     print(fruit,(price,stock))
     if(stock==0):
         print(fruit)
-total_value+=price*stock
-print(total_value)
-    
