@@ -2,5 +2,8 @@ tagline="artificial intelligence and machine learning"
 print(tagline.replace("and","&"))
 a=tagline.split()
 print(a)
+acronym=""
 for i in a:
-    print(i)
+    acronym+= i[0].upper()
+
+    
