@@ -5,3 +5,7 @@ inventory={
     "Orange":(60,0)
 }
 out_of_stock=set()
+total_value=0
+for fruit,(price,stock) in inventory.items(): 
+    print(fruit,(price,stock))
+    
