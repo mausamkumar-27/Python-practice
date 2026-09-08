@@ -1,2 +1,3 @@
 tagline="artificial intelligence and machine learning"
-print()
+print(tagline.replace("and","&"))
+print(tagline.split())
