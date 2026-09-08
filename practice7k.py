@@ -5,5 +5,6 @@ print(a)
 acronym=""
 for i in a:
     acronym+= i[0].upper()
+print("Acronym: ",acronym)
 
     
