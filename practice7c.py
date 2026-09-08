@@ -11,3 +11,5 @@ for fruit,(price,stock) in inventory.items():
     if(stock==0):
         out_of_stock.add(fruit)
         print(out_of_stock)
+    total_value+=price*stock
+    print(total_value)
