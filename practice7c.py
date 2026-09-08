@@ -1,6 +1,7 @@
 inventory={
-    "Apple":(120,15),
+    "Apple":(120,15),        #price,stock
     "Banana":(40,0),
     "Mango":(80,25),
     "Orangge":(60,0)
 }
+out_of_stock=set()
