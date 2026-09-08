@@ -8,4 +8,6 @@ out_of_stock=set()
 total_value=0
 for fruit,(price,stock) in inventory.items(): 
     print(fruit,(price,stock))
+    if(stock==0):
+        print(fruit)
     
