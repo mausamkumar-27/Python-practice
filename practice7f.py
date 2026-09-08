@@ -10,5 +10,6 @@ for no in numbers:
         odds.append(no)
 print(evens)
 print(odds)
-sum+=evens
-print("sum is: ",sum)
+#sum+=evens                aise sum nhhi hoga kyuki sum Python ka in-built function h & tu variable bhi usi naam se rakh diya to dono overwrite ho jaayega
+print("Sum is: ",sum(evens))
+print("Sum is: ",sum(odds))
