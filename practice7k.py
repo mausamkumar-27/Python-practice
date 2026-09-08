@@ -1,6 +1,6 @@
 tagline="artificial intelligence and machine learning"
-a=tagline.replace("and","&")
-print(a)
+tagline=tagline.replace("and","&")
+print(tagline)
 b=tagline.split()
 print(b)
 acronym=""
