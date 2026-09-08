@@ -1,5 +1,6 @@
 tagline="artificial intelligence and machine learning"
 print(tagline.replace("and","&"))
-print(tagline.split())
-for i in tagline.split():
+a=tagline.split()
+print(a)
+for i in a:
     print(i)
