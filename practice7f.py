@@ -10,3 +10,5 @@ for no in numbers:
         odds.append(no)
 print(evens)
 print(odds)
+sum+=evens
+print("sum is: ",sum)
