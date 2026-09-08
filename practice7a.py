@@ -11,6 +11,11 @@ print(student_dict.get("Rohan","Not Found"))'''
 
 
 
-student_dict={name:marks for name,marks in records}
+student_dict={name:marks for name,marks in records}         #badhiya methods
+print(student_dict)
+print(student_dict.get("Ali"))
+#print(student_dict.get("Rohan"))
+print(student_dict.get("Rohan","Not Found"))
+
 
 
