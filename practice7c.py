@@ -5,5 +5,3 @@ inventory={
     "Orange":(60,0)
 }
 out_of_stock=set()
-for item, value in inventory:
-    print(item,value)
