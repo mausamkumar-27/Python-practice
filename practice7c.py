@@ -9,4 +9,5 @@ total_value=0
 for fruit,(price,stock) in inventory.items(): 
     print(fruit,(price,stock))
     if(stock==0):
-        print(fruit)
+        out_of_stock.add(fruit)
+        print(out_of_stock)
