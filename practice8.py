@@ -10,3 +10,6 @@ unique_course=set()
 for st_id,(name,courses,attendence) in student_database.items():
     unique_course.update(courses)
 print(unique_course)
+for st_id,(name,courses,attendence) in student_database:
+    unique_course.strip("%")
+
