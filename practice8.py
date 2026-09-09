@@ -6,3 +6,5 @@ student_database = {
     "st_105": ("Vikas", ["History", "English"], "invalid_entry"),
     "st_106": ("Sneha", ["Maths", "Computer", "Chemistry"], "64%")
 }
+unique_course=set()
+
