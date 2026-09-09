@@ -7,6 +7,8 @@ student_database = {
     "st_106": ("Sneha", ["Maths", "Computer", "Chemistry"], "64%")
 }
 unique_course=set()
-for tup in student_database.items():
-    print(tup)
-    
+#for tup in student_database.items():
+   #print(tup)
+for st_id,(name,course,attendence) in student_database:
+   unique_course.update(course)
+   print(unique_course)
