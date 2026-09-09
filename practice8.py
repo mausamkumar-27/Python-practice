@@ -7,3 +7,5 @@ student_database = {
     "st_106": ("Sneha", ["Maths", "Computer", "Chemistry"], "64%")
 }
 unique_course=set()
+for st_id,(name,courses,attendence) in student_database.items():
+    print(courses)
