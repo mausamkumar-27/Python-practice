@@ -8,4 +8,4 @@ student_database = {
 }
 unique_course=set()
 for key,value in student_database:
-    print(f"")
+    print(f"{key}:{value}")
