@@ -8,4 +8,9 @@ student_database = {
 }
 unique_course=set()
 for st_id,(name,courses,attendence) in student_database.items():
-    print(courses)
+    a=courses
+    print(a)
+s=set(a)
+print(s)
+
+    
