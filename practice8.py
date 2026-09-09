@@ -7,4 +7,5 @@ student_database = {
     "st_106": ("Sneha", ["Maths", "Computer", "Chemistry"], "64%")
 }
 unique_course=set()
-
+for key,value in student_database:
+    print(f"")
