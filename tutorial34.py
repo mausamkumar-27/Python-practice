@@ -4,3 +4,7 @@ e1.update(e2)
 print(e1)
 e2.clear()
 print(e2)
+
+remove_value=e1.pop(567)
+print(remove_value)
+print(e1)
