@@ -3,8 +3,10 @@ valid_numbers=[]
 for items in raw_inputs:
     print(items)
 try:
-    new=int(items).valid_numbers.append()
-    print(new)
+    #new=int(items).valid_numbers.append()
+    new=int(items)
+    valid_numbers.append(new)
+    
 
 except ValueError:
     print(f"skipping invalid:{items}")
