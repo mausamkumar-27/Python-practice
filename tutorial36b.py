@@ -4,3 +4,5 @@ try:
     print(languages[idx])
 except IndexError:
     print("Index out of bounds! valid range is 0 to 3")
+except ValueError:
+    print("Enter numbers only!")
