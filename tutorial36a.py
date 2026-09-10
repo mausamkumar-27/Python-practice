@@ -7,4 +7,3 @@ except ValueError:
     print("Please enter numbers only!")
 except ZeroDivisionError:
     print("Division by Zero is impossible")
-print(result)
