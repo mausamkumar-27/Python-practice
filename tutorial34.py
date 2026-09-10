@@ -8,3 +8,13 @@ print(e2)
 remove_value=e1.pop(567)
 print(remove_value)
 print(e1)
+
+
+
+
+
+ep1={122:45,123:89,135:37}
+del ep1[123]
+print(ep1)
+#del ep1
+#print(ep1)
