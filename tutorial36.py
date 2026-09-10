@@ -3,7 +3,7 @@ valid_numbers=[]
 for items in raw_inputs:
     print(items)
 try:
-    new=int(items).valid_number.append()
+    new=int(items).valid_numbers.append()
     print(new)
 
 except ValueError:
