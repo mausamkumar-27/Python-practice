@@ -6,12 +6,12 @@ else:
 
 for i in range(7):
     print(i)
-    if i==3:
+    if i==4:
         break
 else:
     print("This will not execute!")
 
-for i in []:
-    print(i)
+for e in []:
+    print(e)
 else:
     print("Execute even an empty iterable!")
