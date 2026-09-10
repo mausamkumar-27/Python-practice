@@ -10,3 +10,8 @@ for i in range(7):
         break
 else:
     print("This will not execute!")
+
+for i in []:
+    print(i)
+else:
+    print("Execute even an empty iterable!")
