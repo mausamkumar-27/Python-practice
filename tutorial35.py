@@ -11,7 +11,7 @@ for i in range(7):
 else:
     print("This will not execute!")
 
-for e in []:
-    print(e)
+for i in []:
+    print(i)
 else:
     print("Execute even an empty iterable!")
