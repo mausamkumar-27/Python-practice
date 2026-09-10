@@ -1,7 +1,7 @@
 languages=["Python","C","C++","Java"]
-idx=int(input("Enter index to search:"))
+idx=input("Enter index to search:")
 try:
-    print(languages[idx])
+    print(languages[int(idx)])
 except IndexError:
     print("Index out of bounds! valid range is 0 to 3")
 except ValueError:
