@@ -7,5 +7,5 @@ def check_execution():
     finally:
         print("I will always execute,even after the return statment!")
 print("This standard print statement will never run")
-val=check_execution
+val=check_execution()
 print("Function returned: ",val)
