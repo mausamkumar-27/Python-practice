@@ -1,6 +1,6 @@
 try:
     arr=[10,20]
-    print(arr[1])
+    print(arr[9])
 except ValueError:
     print("Handled ValueError")
 finally:
