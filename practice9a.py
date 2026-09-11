@@ -4,6 +4,8 @@ try:
     print(list[5])
     if name=="Mausam":
         print("Your name matches the criteria!")
+except ValueError:
+    print("This is not your name!")
 
 except IndexError:
     print("Your index is out of range")
