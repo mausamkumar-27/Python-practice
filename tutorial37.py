@@ -1,6 +1,7 @@
 def check_execution():
     try:
         print("Executing try block...")
+        return 1
 
     except Exception:
         return 0
