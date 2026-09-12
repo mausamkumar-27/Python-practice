@@ -5,9 +5,9 @@ def extract_unique_integer(data_tuple):
 extract_unique_integer(("Mausam",2,2.7,10,2,10,"Hello"))      #tumne kevl 1 parameter liye ho line 1 me isliye double (()) taaki ek tuple lge
 try:
     a=int(i)
-    s.update(a)
 except ValueError:
     print("control the error")
+s.update(a)
 print(s)
 
     
