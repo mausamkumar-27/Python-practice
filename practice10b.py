@@ -5,6 +5,6 @@ def validate_grades(grade_dict):
             raise ValueError("Please! Enter valid marks")
 
 try:
-    validate_grades({"Mausam": 85, "Aman": 90, "Priya": 95, "Raman": 120, "Chaman": -10})
+    validate_grades({"Mausam": 85, "Aman": 90, "Priya": 95, "Raman": 12, "Chaman": 10})
 except ValueError as e:
     print("Caught error:", e)
