@@ -1,7 +1,7 @@
 analyze_text=input("Enter something: ")
 b=analyze_text.lower()
-s=set()
+d={}
 for i in b:
     print(i)
-    s.update(i)
-print(s)
+    
+
