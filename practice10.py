@@ -3,5 +3,5 @@ b=analyze_text.lower()
 d={}
 for i in b:
     print(i)
-    
+print(d)   
 
