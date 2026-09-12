@@ -3,6 +3,6 @@ b=analyze_text.lower()
 d={}
 for i in b:
     d[i]=i.count(i)
-    print(d)
+print(f"{i}:{i.count(i)}",d)    
 
 
