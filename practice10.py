@@ -3,4 +3,5 @@ b=analyze_text.lower()
 s=set()
 for i in b:
     print(i)
-    
+    s.update(i)
+print(s)
