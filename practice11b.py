@@ -5,7 +5,7 @@ def check_age(age_dict):
         if age!=int(age) or age!=float(age):
             raise ValueError("Age must be valid Number")
     try:
-        check_age({"Rahul":25,"Priya":"Unknown","Amit":-3})
+        check_age({"Rahul":25,"Priya":-5.9,"Amit":-3})
     except ValueError:
         print(f"Enter positive no only")
     except TypeError:
