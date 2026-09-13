@@ -6,7 +6,7 @@ def process_mixed_data(data_list):
     
         try:
             val=int(i)
-            s.add(val)
+            s.add(val)       #yahan bhi val ek single integer return krta h so use add method
         except ValueError:
             print(f"skkiping invalid integer!")
     print(s)
