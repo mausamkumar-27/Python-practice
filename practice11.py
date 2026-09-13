@@ -2,7 +2,7 @@ def process_mixed_data(data_list):
     s=set()
     for i in data_list:
         #s.update(i)
-        s.add(i)
+        s.add(i)           #add uses for single element only--haan for loop me i single element hi hai
         print(s)
 
 
