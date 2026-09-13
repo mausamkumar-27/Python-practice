@@ -5,4 +5,4 @@ def process_mixed_data(data_list):
         print(s)
 
 
-process_mixed_data("Mausam",9,2,122,3.9,9,122,"Hardik","Aman")
+process_mixed_data(("Mausam",9,2,122,3.9,9,122,"Hardik","Aman"))
