@@ -19,4 +19,4 @@ def validate_salaries(salary_dict):
         validate_salaries({"Mausam":150000,"Aman":200000,"Hardik":-5000,"Raman":50000000})
     except ValueError:
         print(f"Your invalid salary is{name}:{salary}")
-validate_salaries({"Mausam":150000,"Aman":200000,"Hardik":-5000,"Raman":50000000})
+#validate_salaries({"Mausam":150000,"Aman":200000,"Hardik":-5000,"Raman":50000000})
