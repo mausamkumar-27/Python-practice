@@ -1,7 +1,8 @@
 def process_mixed_data(data_list):
     s=set()
     for i in data_list:
-        s.update(i)
+        #s.update(i)
+        s.add(i)
         print(s)
 
 
