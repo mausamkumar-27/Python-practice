@@ -17,6 +17,6 @@ def validate_salaries(salary_dict):
         
     try:
         validate_salaries({"Mausam":150000,"Aman":200000,"Hardik":-5000,"Raman":50000000})
-    except ValueError:
-        print(f"Your invalid salary is{name}:{salary}")
+    except ValueError as e:
+        print("Caught Error:",e)
 #validate_salaries({"Mausam":150000,"Aman":200000,"Hardik":-5000,"Raman":50000000})
