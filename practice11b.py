@@ -15,4 +15,8 @@ def validate_salaries(salary_dict):
         if salary>500000:
             raise ValueError(f"Salary is unrealistically high for {name}")
         
-        
+    try:
+        print(f"Your valid salary is{name}:{salary}")
+    except ValueError:
+        print(f"Your invalid salary is{name}:{salary}")
+validate_salaries({"Mausam":150000,"Aman":200000,"Hardik":-5000,"Raman":50000000})
