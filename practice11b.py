@@ -20,7 +20,7 @@ def check_age(age_dict):
             raise ValueError("Age must be greater than zero")
 
         if not isinstance(age, int):
-            raise ValueError("Age must be valid number")
+            raise TypeError("Age must be valid number")
 
 
 try:
