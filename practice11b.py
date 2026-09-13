@@ -1,4 +1,4 @@
-def check_age(age_dict):
+'''def check_age(age_dict):
     for name,age in age_dict.items():
         if age <0:
             raise ValueError("Agel must be greater than zero")
@@ -9,4 +9,25 @@ def check_age(age_dict):
     except ValueError:
         print(f"Enter positive no only")
     except TypeError:
-        print("Age must be valid no")
+        print("Age must be valid no")'''
+
+
+
+def check_age(age_dict):
+    for name, age in age_dict.items():
+
+        if age < 0:
+            raise ValueError("Age must be greater than zero")
+
+        if not isinstance(age, int):
+            raise ValueError("Age must be valid number")
+
+
+try:
+    check_age({"Rahul": 25, "Priya": -5.9, "Amit": -3})
+
+except ValueError:
+    print("Enter positive no only")
+
+except TypeError:
+    print("Age must be valid no")
