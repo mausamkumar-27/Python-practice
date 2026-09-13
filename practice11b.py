@@ -1,0 +1,13 @@
+def check_age(age_dict):
+    for name,age in age_dict.items():
+        if age <0:
+            raise ValueError("Agel must be greater than zero")
+        if age!=int(age) or age!=float(age):
+            raise ValueError("Age must be valid Number")
+    try:
+        check_age(f"Your age is {age}")
+    except ValueError:
+        print(f"Enter positive no only")
+    except TypeError:
+        print("Age must be valid no")
+check_age({"Rahul":25,"Priya":"Unknown","Amit":-3})
