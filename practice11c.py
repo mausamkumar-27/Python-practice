@@ -44,7 +44,9 @@ for i in range(1,n+1):
 #print shape of H by * 
 n=int(input())
 for i in range(1,n+1):
-    for j in range(1,i+1):
-        print("*",end=" ")
-    print()
-
+    for j in range(1,n+1):
+        if(j==1 or j==n or i==n//2):
+            print("*",end=" ")
+        else:
+            print(" ",end="")
+    print(
