@@ -5,7 +5,7 @@ for i in range(1,n+1):
     print()
 
 
-'''n=int(input())
+n=int(input())
 for i in range(1,n+1):
     for j in range(1,i+1):
         print(i,end=" ")
@@ -31,6 +31,6 @@ for i in range(1,n+1):
         print(" ",end=" ")
     for k in range(1,i+1):
         print("*",end=" ")
-    print()'''
+    print()
 
 #print shape of H by * 
