@@ -1,4 +1,4 @@
-'''n=int(input())
+n=int(input())
 for i in range(1,n+1):
     for j in range(1,i+1):
         print("*",end=" ")
@@ -39,14 +39,6 @@ for i in range(1,n+1):
         print(" ",end=" ")
     for k in range(1,i+1):
         print("*",end=" ")
-    print()'''
+    print()
 
 #print shape of H by * 
-n=int(input())
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if(j==1 or j==n or i==n//2):
-            print("*",end=" ")
-        else:
-            print(" ",end="")
-    print(
