@@ -1,2 +1,3 @@
 import math
-result=mod
+result=math.sqrt(100)
+print(result)
