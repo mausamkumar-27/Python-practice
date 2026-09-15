@@ -12,4 +12,4 @@ if not os.path.exists("test_dir"):
     print("Directory created is successfully!")'''
 
 import os
-os.rename("test_dir.txt","retest_dir.txt")
+os.rename("test_dir","retest_dir")
