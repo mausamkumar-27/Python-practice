@@ -4,9 +4,12 @@ print("Current Directory: ",current_dir)
 
 import os
 items=os.listdir()
-print(items)'''
+print(items)
 
 import os
 if not os.path.exists("test_dir"):
     os.mkdir("test_dir")
-    print("Directory created is successfully!")
+    print("Directory created is successfully!")'''
+
+import os
+os.rename("test_dir.txt","retest_dir.txt")
