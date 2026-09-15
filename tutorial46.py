@@ -19,6 +19,7 @@ os.rmdir("retest_dir")'''            #lo ye file delete bhi kr diya
 
 
 import os 
-if os.path.exists("virtual_envy.py"):
+if os.path.exists("virtual_env.py"):
     print("The file exists!")
-    
+else:
+    print("Not exist!")
