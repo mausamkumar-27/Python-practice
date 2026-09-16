@@ -8,6 +8,7 @@ for i in range(1,6):
 s=s1.intersection(s2)
 t=tuple(s)
 for j in t:
+    total=0         #tumhen vaiable define krna pdega loop se pehle
     if j%2!=0:
         total+=j
 print(total)
