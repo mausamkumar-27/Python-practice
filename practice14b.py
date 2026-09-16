@@ -9,5 +9,5 @@ s=s1.intersection(s2)
 t=tuple(s)
 for j in t:
     if j%2!=0:
-        s+=j
-        print(s)
+        total+=j
+        print(total)
