@@ -10,4 +10,4 @@ t=tuple(s)
 for j in t:
     if j%2!=0:
         total+=j
-        print(total)
+print(total)
