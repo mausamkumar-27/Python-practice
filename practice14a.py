@@ -1,3 +1,4 @@
 string_name=input()
 score=int(input())
-tuple_list=[]
+list_of_tuple=[]
+
