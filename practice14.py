@@ -1,4 +1,5 @@
 name=input("Enter Something Here: ")
+name=name.replace(' ','')
 d={}
 s=set()
 for i in name:
