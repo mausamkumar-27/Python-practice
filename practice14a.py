@@ -1,5 +1,5 @@
-string_name=input()
-score=int(input())
+string_name=input("Enter name: ")
+score=int(input("Enter score: "))
 list_of_tuple=[]
 list_of_tuple.append((string_name,score))
 print(list_of_tuple)
