@@ -2,5 +2,5 @@ d={}
 for i in range(1,6):
     fruits=input("Enter fruits name: ")
     quantity=float(input("Enter quantity in kg: "))
-    d[fruits]=quantity
+    d[fruits]=d.get(fruits,0)
 print(d)
