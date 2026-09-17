@@ -7,4 +7,4 @@ for i in range(1,6):
     #l=list(tup)      same reason
     l.append(names)
     tup=tuple(l)
-    
+print(tup)
