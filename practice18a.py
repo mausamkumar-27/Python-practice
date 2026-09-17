@@ -14,3 +14,5 @@ for j in tup:
         vowel_list.append(j)
     else:
         consonent_list.append(j)
+
+print(consonent_list)
