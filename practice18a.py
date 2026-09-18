@@ -18,9 +18,13 @@ for j in tup:
         consonent_list.append(j)
 #print(vowel_list)
 #print(consonent_list)
-for vowel in vowel_list:
+'''for vowel in vowel_list:
     d['vowel']=d.get('vowel')+vowel_list
 for consnent in consonent_list:
-    d['consonent']=d.get('consonent')+consonent_list
+    d['consonent']=d.get('consonent')+consonent_list'''
+
+
+d['vowel']=tuple(vowel_list)
+d['consonent']=tuple(consonent_list)
 print(d)
 
