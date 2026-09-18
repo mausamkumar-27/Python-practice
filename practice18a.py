@@ -1,5 +1,4 @@
-l=[]
-
+l=[],d={}
 for i in range(1,6):
     names=input("Enter names: ")
     #l=list(i)  # in keyword ke andar keval iterable items valid h
@@ -15,4 +14,3 @@ for j in tup:
     else:
         consonent_list.append(j)
 
-print(consonent_list)
