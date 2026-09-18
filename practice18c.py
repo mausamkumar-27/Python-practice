@@ -1,4 +1,4 @@
 
 sentence=input("Enter sentence: ")
-sentence.split()
+#sentence.split()   
 print(sentence)
