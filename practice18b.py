@@ -10,4 +10,4 @@ def user(*names):
     d['vowel']=tuple(vowel_list)
     d['consonant']=tuple(consonant_list)
     print(d)
-user('Mausam','hardik','ram','Utthappa','Elvish','Aman')
+user('Mausam','Hardik','Ram','Utthappa','Elvish','Aman')
