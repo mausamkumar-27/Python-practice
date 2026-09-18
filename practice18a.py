@@ -19,8 +19,8 @@ for j in tup:
 #print(vowel_list)
 #print(consonent_list)
 for vowel in vowel_list:
-    d[vowel]=d.get(vowel,0)+vowel_list
+    d[vowel]=d.get(vowel)+vowel_list
 for consnent in consonent_list:
-    d[consonent]=d.get(consonent,0)+consonent_list
+    d[consonent]=d.get(consonent)+consonent_list
 print(d)
 
