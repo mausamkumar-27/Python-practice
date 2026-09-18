@@ -7,5 +7,6 @@ for i in words:
     #reverse_word=i.reverse()    use reverse() method only for list & not for string
     reverse_word=i[::-1]
     #print(reverse_word)
-    d[len(reverse_word)]=tuple(reverse_word)
+    #d[len(reverse_word)]=tuple(reverse_word)      use comma bcz ye reverse_word ka char as tuple dega 
+    d[len(reverse_word)]=tuple(reverse_word,)  
 print(d)
