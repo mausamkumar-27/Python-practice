@@ -4,5 +4,6 @@ sentence=input("Enter sentence: ")
 words=sentence.split()
 #print(words)
 for i in words:
-    reverse_word=i.reverse()
+    #reverse_word=i.reverse()    use reverse() method only for list & not for string
+    reverse_word=i[::-1]
     print(reverse_word)
