@@ -1,4 +1,6 @@
-l=[],d={}
+#l=[],d={}
+l=[]
+d={}
 
 for i in range(1,6):
     names=input("Enter names: ")
