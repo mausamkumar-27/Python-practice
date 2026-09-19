@@ -9,7 +9,7 @@ vowel_set=set()
 consonent_set=set()
 for j in s:
     #if j==('a','e','i','o','u','A','E','I','O','U'):    don't equate string(j) to tuple('a','e',....)
-    if j  in ('a','e','i','o','u','A','E','I','O','U'):
+    if j  in ('a','e','i','o','u','A','E','I','O','U'):    #look at in keyword only use for iterable
         vowel_set.update(j)
     else:
         consonent_set.update(j)
