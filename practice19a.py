@@ -9,7 +9,7 @@ for i in range(1,4):
 #new_set=set((d.(values)).intersection(skill))      set ke andar immutable item hi jaayegi
 
 all_skills=set().union(*d.values())
-print(all_skills)
+print("all_skills: " ,all_skills)   # ye * teeno set ko alag-2 open kiya & union leke set me daal diya
 '''common_skills=list(d.values())[0].intersection(*d.values())
 
 summary={
