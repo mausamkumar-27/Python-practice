@@ -12,6 +12,7 @@ for j in s:
         vowel_set.update(j)
     else:
         consonent_set.update(j)
+
 d[vowel_set]=d.get(vowel_set,0)+1
 d[consonent_set]=d.get(consonent_set,0)+1
 print(d)
