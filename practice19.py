@@ -13,6 +13,6 @@ for j in s:
     else:
         consonent_set.update(j)
 
-#d['vowel']=d.get('vowel',set())+vowel_set          python me sets ke beech + operator kaam nhi krte
+#d['vowel']=d.get('vowel',set())+vowel_set          python me sets ke beech + operator kaam nhi krte (set()+ vowel_set)
 #d['consonent']=d.get('consonent',set())+consonent_set
 print(d)
