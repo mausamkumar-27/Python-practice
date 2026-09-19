@@ -15,4 +15,6 @@ for j in s:
 
 #d['vowel']=d.get('vowel',set())+vowel_set          python me sets ke beech + operator kaam nhi krte (set()+ vowel_set)
 #d['consonent']=d.get('consonent',set())+consonent_set
+d['vowel']=d.get('vowel',set()).union(vowel_set)          
+d['consonent']=d.get('consonent',set()).union(consonent_set)
 print(d)
