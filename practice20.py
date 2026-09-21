@@ -19,7 +19,7 @@ def manage_students():
    }
     print(d)
     for Roll_no,Record in d.items():
-        print(f" Roll_no {Roll_no}:{Record}")
+        print(f" Roll_no {Roll_no}:Student_records{Record}")
 manage_students()
 
 
