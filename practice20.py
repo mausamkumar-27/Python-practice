@@ -17,6 +17,10 @@ def manage_students():
        "Marks list":marks,
        "Total Marks":sum(marks)
    }
+    print(d)
     for Roll_no,Record in d.items():
         print(f" Roll_no {Roll_no}:{Record}")
 manage_students()
+
+
+
