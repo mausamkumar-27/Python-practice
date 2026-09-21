@@ -10,4 +10,4 @@ for i in range(1,4):
 #tup=tuple(roll,section)    tumne yahan 2 alag-2 variables daal diye jbki tuple accept only 1 arguments
 #tup=(roll,section)    overwrite problem created bcz using of assignment operator
     d['n']=d.get('n',())+tup
-print(tup)
+print(d)
