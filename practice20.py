@@ -1,7 +1,6 @@
 
 def manage_students():
     d={}
-tup=()
 
 for i in range(1,4):
     name=input("Name: ")
