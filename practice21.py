@@ -5,3 +5,4 @@ print(new_nums)
 
 words=["apple","bat","cat","elephant"]
 new_words=list(filter(lambda x:len(x)>3,words))
+print(new_words)
