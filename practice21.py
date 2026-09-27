@@ -17,3 +17,9 @@ scores1=list(filter(lambda x: x>=50,scores))
 scores2=list(map(lambda x: x+5,scores1))
 print(scores2)
 
+x=[10,20,30]
+y=x
+z=[10,20,30]
+print(x==z)
+print(x is z)
+print(x is y)
