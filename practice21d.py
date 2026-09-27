@@ -4,8 +4,3 @@ for index,mark in enumerate(marks):
 
 
 
-marks=[17,13,25,24,98,25]
-index=0
-for index,i in marks:
-    print(index,i)
-    index+=1
