@@ -6,3 +6,13 @@ print(new_nums)
 words=["apple","bat","cat","elephant"]
 new_words=list(filter(lambda x:len(x)>3,words))
 print(new_words)
+
+from functools import reduce
+numbers=[5,4,3,2]
+new_numbers=reduce(lambda x,y:x-y,numbers)
+print(new_numbers)
+
+scores=[45,80,33,90,60,50,12,54]
+scores1=list(filter(lambda x: x>=50,scores))
+scores2=list(map(lambda x: x+5,scores1))
+print(scores2)
