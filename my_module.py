@@ -6,3 +6,4 @@ if __name__ == "__main__":
 else:
     print("Imported from another file")
 
+print("Current __name__ value is:",__name__)
