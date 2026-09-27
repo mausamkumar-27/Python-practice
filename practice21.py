@@ -16,3 +16,4 @@ scores=[45,80,33,90,60,50,12,54]
 scores1=list(filter(lambda x: x>=50,scores))
 scores2=list(map(lambda x: x+5,scores1))
 print(scores2)
+
