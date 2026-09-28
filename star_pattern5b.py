@@ -5,7 +5,7 @@ for i in range(1,2*n):
             print("*",end=" ")
         else:
             print(" ",end=" ")
-    for k in range(1,n):
+    for k in range(1,n+1):
         if k==1 or k==n or i==2*n:
             print("*", end=" ")
         else:
