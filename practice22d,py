@@ -1,0 +1,5 @@
+def print_student_info(name,age,course):
+    print("Name: ",name)
+    print("Age: ",age)
+    print("Course:",course)
+print_student_info(name='Mausam',age=19,course='B.Tech')
