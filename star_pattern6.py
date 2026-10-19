@@ -5,8 +5,8 @@ for i in range(1,2*n):
             print("*", end=" ")
         else:
             print(" ",end=" ")
-    for k in range(1,2*n):
-        if k==1 or k==2*n-1 or i==2*n-1:
+    for k in range(n+1,2*n):
+        if k==n+1 or k==2*n-1 or i==2*n-1:
             print("*",end=" ")
         else:
             print(" ", end=" ")
