@@ -1,2 +1,3 @@
 sentence="Python programming is very powerful and easy"
-print(sentence.split())
+lists=sentence.split()
+print(lists)
