@@ -1,3 +1,4 @@
 sentence="Python programming is very powerful and easy"
-lists=sentence.split()
-print(lists)
+word=sentence.split()
+print(word)
+print(zip(word,len(word)))
