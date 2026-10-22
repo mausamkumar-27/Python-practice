@@ -7,4 +7,5 @@ print(list(zip(words,lists)))'''
 
 length_list=[]
 for i in words:
-    l
+    length_list.append(len(i))
+print(list(zip(words,length_list)))
