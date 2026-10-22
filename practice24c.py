@@ -6,4 +6,5 @@ new_prices=[]
 for p,d in b:
     c=p-(p*d)/100
     new_prices.append(c)
-print(new_prices)
+#print(new_prices)
+print(dict(zip(products,new_prices)))
