@@ -5,4 +5,6 @@ for i in marks_tuple:
     avg=sum(i)/len(i)
     #print(avg)
     avg_list.append(avg)
-print(avg_list)
+#print(avg_list)
+my_dict=dict(zip(students,avg_list))
+print(my_dict)
