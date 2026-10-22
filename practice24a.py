@@ -4,5 +4,5 @@ avg_list=[]
 for i in marks_tuple:
     avg=sum(i)/len(i)
     #print(avg)
-    b=avg_list.append(avg)
-print(b)
+    avg_list.append(avg)
+print(avg_list)
