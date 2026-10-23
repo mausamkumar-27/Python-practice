@@ -8,5 +8,8 @@ b=[p*q for p,q in a]
 #print(b)
 c=list(zip(items,b,ratings))
 #print(c)
+from functools import reduce
 my_dict={i:j for i,j,k in c if k >=4.0}
-print(my_dict)
+grand_total=reduce(lambda x,y : x+y,my_dict.values())
+print("Filtered Dictionary:",my_dict)
+print("Grand total:",grand_total)
