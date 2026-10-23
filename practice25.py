@@ -8,5 +8,5 @@ b=[p*q for p,q in a]
 #print(b)
 c=list(zip(items,b,ratings))
 #print(c)
-my_dict={i:j for i,j,k in c if ratings >=4.0}
+my_dict={i:j for i,j,k in c if k >=4.0}
 print(my_dict)
