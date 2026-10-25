@@ -10,6 +10,7 @@ mid_term=list(filter(lambda x:x>=60,mid_term_scores))
 students_tup=list(zip(students,mid_term,end_term_scores))
 print(students_tup)
 my_dict={i:(j+k)/2 for i,j,k in students_tup}
+print(my_dict)
 my_dict_values=[j for i,j in my_dict]
 total_sum= reduce(lambda x,y:x+y,my_dict_values)
 print("Eligible Students Dictionary:",my_dict)
