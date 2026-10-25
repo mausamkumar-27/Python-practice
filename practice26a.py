@@ -8,4 +8,4 @@ all_tup=list(zip(students,attendence_pct,mid_term_scores,end_term_scores))
 my_dict={name:(mt+et)/2 for name,att,mt,et in all_tup if att>=80 and mt>=60}
 total_sum=reduce(lambda x,y:x+y,my_dict.values())
 print("Eligible Students Dictionary:",my_dict)
-print("Total Sum of Eligible Scores:",my_dict.values())
+print("Total Sum of Eligible Scores:",total_sum)
