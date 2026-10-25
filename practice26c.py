@@ -4,7 +4,8 @@ distances=[1200,800,1500,600,450]
 transport_modes=["Air","Truck","Air","Train","Truck"]
 base_rates=[12,8,15,6,7]
 tup_all=list(zip(warehouses,weights,distances,transport_modes,base_rates))
-ship_cost=list(map(lambda ware,w,d,t,b:w*d*b,tup_all))
+print(tup_all)
+ship_cost=list(map(lambda ware,w,d,t,b:w*d*b,warehouses,weights,distances,transport_modes,base_rates))
 print(ship_cost)
 #ship_cost=[w*d*b for ware,w,d,t,b in tup_all]
 '''transport_ship_tup=list(zip(transport_modes,ship_cost))
