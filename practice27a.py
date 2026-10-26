@@ -9,7 +9,7 @@ print("Score outside function:",player_score)'''
 
 daily_limit=10000
 def check_limit():
-    print("Curren Limit:",daily_limit)
+    print("Current Limit:",daily_limit)
 def update_limit(new_limit):
     global daily_limit
     daily_limit=new_limit
