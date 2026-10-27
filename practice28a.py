@@ -1,4 +1,4 @@
-status_code=int(input("Enter HTTP Status code:"))
+status_code=int(input("Enter HTTP Status code: "))
 match status_code:
     case 200:
         print("OK:Request was successful.")
