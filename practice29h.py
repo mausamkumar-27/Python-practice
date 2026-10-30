@@ -1,6 +1,6 @@
 class shopingcart:
     def add_item(self,item_name,price):
-        self.item_name-item_name
+        self.item_name=item_name
         self.price=price
     def show_bill(self):
         print(f"Item:{self.item_name},Price:{self.price}")
