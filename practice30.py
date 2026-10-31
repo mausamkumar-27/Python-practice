@@ -1,7 +1,10 @@
 products="laptop,phone,tablet,headphone"
 prices="50000,30000,20000,5000"
 categories="Electronics,Electronics,Electronics,Accessories"
-discount=10
-#a=list(zip(products,prices))
-list_products=products.split(" ")
-print(list_products)
+discounts=10
+list_products=products.split(",")
+list_prices=prices.split(",")
+list_categories=categories.split(",")
+
+z_pro_price=list(zip(list_products,list_prices,list_categories))
+print(z_pro_price)
