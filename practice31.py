@@ -14,7 +14,7 @@ combined_data=list(zip(product_list,updated_stock,zone_list))
 auth_zone_set=set(Auth_z_list)
 my_dict={product:(zone,stock,zone in auth_zone_set) for product,stock,zone in combined_data }
 #print(my_dict)
-total_revenue=reduce(lambda x,y:x+y,[stock for zone,stock,is_authorised in my_dict.values()])
+total_revenue=reduce(lambda x,y:x+y,[stock for zone,stock,is_authorised in my_dict.values() if is_authorised])
 for product,details in my_dict.items():
     zone,stock,is_authorised=details
     print(f"Item:{product.strip().capitalize()} | Zone Autorized:{is_authorised} | Updated Stock:{stock}")
