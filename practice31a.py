@@ -12,7 +12,7 @@ updated_energy=list(map(lambda x: x+bonus,energy_list))
 combined_data=list(zip(panel_list,sector_list,updated_energy))
 approved_s_set=set(approved_s_list)
 my_dict={name:(approved_s,u_energy, approved_s in approved_s_set) for name,approved_s,u_energy in combined_data}
-#print(my_dict)
+print(my_dict)
 for p_name,details in my_dict.items():
     a,e,is_authorised = details
     print(f"Panel:{p_name.strip().capitalize()} | Sector Approved:{is_authorised} | Final Energy:{e}")
