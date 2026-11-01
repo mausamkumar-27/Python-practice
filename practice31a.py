@@ -14,7 +14,7 @@ approved_s_set=set(approved_s_list)
 my_dict={name:(approved,u_energy, approved in approved_s_set) for name,approved,u_energy in combined_data}
 #print(my_dict)
 for p_name,details in my_dict.items():
-    a,e = details
-    print(f"Panel:{p_name.strip().capitalize()} | Sector Approved:{a} | Final Energy:{e}")
-total_revenue=reduce(lambda x,y :x+y,[unit for a,unit in my_dict.values() if a])
+    a,e,is_authorised = details
+    print(f"Panel:{p_name.strip().capitalize()} | Sector Approved:{is_authorised} | Final Energy:{e}")
+total_revenue=reduce(lambda x,y :x+y,[e for a,e,is_authorised in my_dict.values() if is_authorised])
 print(f"Total Revenue:{total_revenue}")
