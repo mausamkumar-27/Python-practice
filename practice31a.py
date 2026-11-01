@@ -1,4 +1,4 @@
-
+from functools import reduce
 panel="panel_alpha,panel_beta,panel_gamma,panel_delta"
 energy="450,380,520,290"
 sector="SectorA,SectorB,SectorA,SectorC"
@@ -12,4 +12,9 @@ updated_energy=list(map(lambda x: x+bonus,energy_list))
 combined_data=list(zip(panel_list,sector_list,updated_energy))
 approved_s_set=set(approved_s_list)
 my_dict={name:(approved,u_energy, approved in approved_s_set) for name,approved,u_energy in combined_data}
-print(my_dict)
+#print(my_dict)
+for p_name,details in my_dict.items():
+    a,e = details
+    print(f"Panel:{p_name.strip().capitalize()} | Sector Approved:{a} | Final Energy:{e}")
+total_revenue=reduce(lambda x,y :x+y,[unit for a,unit in my_dict.values() if a])
+print(f"Total Revenue:{total_revenue}")
