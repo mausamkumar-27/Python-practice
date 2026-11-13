@@ -13,11 +13,11 @@ students = [
 ]
 stream_dict={}
 for i in students:
-    stream=i["stream"]
-    name=i["name"]
-    print(stream,name)
-    if stream not in stream_dict:
-        stream_dict["stream"]=["name"]
+    s=i["stream"]
+    n=i["name"]
+    print(s,n)
+    if s not in stream_dict:
+        stream_dict[s]=[n]
     else:
-        stream_dict["stream"].append(name)
+        stream_dict[s].append(n)
 print(stream_dict)
