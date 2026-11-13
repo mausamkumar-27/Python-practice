@@ -11,6 +11,6 @@ class student_report:
         total=self.maths + self.science
         print(f"Total Marks:{total}")
 report=student_report()
-report.set_marks()
+report.set_marks("Mausam",90,95)
 report.display_info()
 report.calculate_total()
