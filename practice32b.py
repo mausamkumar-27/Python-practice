@@ -15,7 +15,7 @@ stream_dict={}
 for i in students:
     stream=i["stream"]
     name=i["name"]
-    #print(stream,name)
+    print(stream,name)
     if stream not in stream_dict:
         stream_dict["stream"]=["name"]
     else:
