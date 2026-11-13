@@ -11,6 +11,8 @@ students = [
     {"name": "Neha", "stream": "Arts", "marks": 88},
     {"name": "Karan", "stream": "Commerce", "marks": 90}
 ]
+stream_dict={}
 for i in students:
-    name,stream,marks=i
-print(i)
+    stream=i["stream"]
+    name=i["name"]
+print(stream,name)
