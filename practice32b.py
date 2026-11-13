@@ -13,4 +13,4 @@ students = [
 ]
 for i in students:
     name,stream,marks=i
-print(name)
+print(i)
