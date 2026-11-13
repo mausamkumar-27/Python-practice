@@ -8,7 +8,7 @@ class car:
     def start(self):
         print(f"Car is starting...")
 my_car=car()
-my_car.start()'''
+my_car.start()
 
 class student:
     def study(self):
@@ -17,4 +17,13 @@ class student:
         print(f"Student is sleeping...")
 s1=student()
 s1.study()
-s1.sleep()
+s1.sleep()'''
+
+class BankAccount:
+    def deposit(self,account_holder,amount):
+        print(f"{account_holder} deposited {amount}")
+    def withdraw(self,account_holder,amount):
+            print(f"{account_holder} withdrew {amount}")
+b1=BankAccount()
+b1.deposit("Mausam",50000)
+b1.withdraw("Rahul",10000)
