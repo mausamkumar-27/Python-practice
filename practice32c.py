@@ -7,6 +7,10 @@ group1 = [45, 60, 75, 90, 82]
 group2 = [75, 90, 33, 50, 60]
 group3 = [90, 12, 75, 45, 88]
 
-b=group1.intersection(group2)
-c=b.intersection(group3)
-print(c)
+a=set(group1)
+b=set(group2)
+c=set(group3)
+
+d=a.intersection(b)
+e=d.intersection(c)
+print(e)
