@@ -21,7 +21,7 @@ def process_payroll(employees_list,active_dept_set,bonus_criteria_func):
     }
 
     return {
-        "Total_Salary_Expanse":total_salary,
+        "Total_Salary_Expense":total_salary,
         "Dept_Salary_Mapping":dept_salary_mapping
     }
 employees = [
