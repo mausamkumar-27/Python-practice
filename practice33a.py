@@ -6,6 +6,8 @@ def process_payroll(employees_list,active_dept_set,bonus_criteria_func):
         emp_copy['name']=emp_copy['name'].strip().title()
         cleaned_employees.append(emp_copy)
 
+        print(emp)
+
     filtered_emps=list(filter(lambda emp: emp['dept'] in active_dept_set,cleaned_employees))
 
     updated_emps=list(map(lambda emp:{
