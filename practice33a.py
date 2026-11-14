@@ -10,15 +10,15 @@ def process_payroll(employees_list,active_dept_set,bonus_criteria_func):
     #print(cleaned_employees)
 
     filtered_emps=list(filter(lambda emp: emp['dept'] in active_dept_set,cleaned_employees))
-    print(filtered_emps)
+    #print(filtered_emps)
     updated_emps=list(map(lambda emp:{
         **emp,
         'salary':round(emp['salary']*1.15,2)if bonus_criteria_func (emp['skills']) else round(emp['salary']*1.05,2)
     },filtered_emps))
-    print(updated_emps)
+    #print(updated_emps)
     total_salary=reduce(lambda acc,emp:acc+emp['salary'],updated_emps,0.0)
     depts={emp['dept'] for emp in updated_emps}
-
+    print(depts)
     dept_salary_mapping={
         dept: sorted([emp['salary'] for emp in updated_emps if emp['dept']==dept],reverse=True) for dept in depts
     }
