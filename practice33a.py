@@ -24,6 +24,12 @@ def process_payroll(employees_list,active_dept_set,bonus_criteria_func):
         "Total_Salary_Expanse":total_salary,
         "Dept_Salary_Mapping":dept_salary_mapping
     }
-
+employees = [
+    {"name": "  mausam kumar ", "dept": "Engineering", "salary": 50000, "skills": ["Python", "C++", "DSA"]},
+    {"name": "rohit sharma", "dept": "HR", "salary": 30000, "skills": ["Communication"]},
+    {"name": "  amit singh", "dept": "Engineering", "salary": 60000, "skills": ["Python", "AI", "ML"]},
+    {"name": "priya roy", "dept": "Finance", "salary": 45000, "skills": ["Excel", "Python"]}
+    ]
+active_depts = {"Engineering", "Finance"}
 criteria=lambda skills:len(skills)>=3
 print(process_payroll(employees,active_depts,criteria))
