@@ -17,7 +17,7 @@ zip_list=list(map(lambda y:list(zip(key_list,y)),cleaned_sl))
 #print(zip_list)
 cleaned_dict=list(map(lambda y:dict(y),zip_list))
 print(cleaned_dict)
-final_dict=list(map(lambda x:{
+final_dict=list(map(lambda x:{**x,
     "timestamp":x["timestamp"].strip(),
     "endpoint":x["endpoint"].strip(),
     "status":int(x["status"].strip()),
