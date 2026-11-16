@@ -23,7 +23,12 @@ final_dict=list(map(lambda x:{**x,
     "status":int(x["status"].strip()),
      "latency":int(x["latency"].strip().replace("ms",""))
 },cleaned_dict))
-print(final_dict)
+#print(final_dict)
 filtered_list=list(filter(lambda y:
     y["status"] in target_statuses,final_dict))
 print(filtered_list)
+perfomance_list=list(map(lambda d:{
+    **d,
+    "performance":"High Latency" if d["latency"]>=300 else "Normal"
+},filtered_list))
+print(perfomance_list)
