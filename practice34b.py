@@ -12,6 +12,8 @@ latency_criteria = lambda latency_ms: latency_ms > 300
 key_list=["timestamp","endpoint","status","latency"]
 
 cleaned_sl=list(map(lambda x:x.strip().split("|"),server_logs))
-print(cleaned_sl)
+#print(cleaned_sl)
 zip_list=list(map(lambda y:list(zip(key_list,y)),cleaned_sl))
 print(zip_list)
+cleaned_dict=list(map(lambda y:dict(y),zip_list))
+print(cleaned_dict)
