@@ -12,3 +12,5 @@ cleaned_orders=list(map(lambda name:{
     **name,"customer":name["customer"].strip().title()
 },orders))
 #print(cleaned_orders)
+filtered_orders=list(filter(lambda x : x["category"] in active_categories,cleaned_orders))
+print(filtered_orders)
