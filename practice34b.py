@@ -1,5 +1,4 @@
-#from functools import reduce
-# Raw server logs: "Timestamp | Endpoint | Status_Code | Response_Time"
+from functools import reduce
 server_logs = [
     "  2026-11-16 10:00:15 | /api/login | 200 | 120ms  ",
     "2026-11-16 10:01:02 | /api/checkout | 500 | 850ms",
@@ -26,9 +25,11 @@ final_dict=list(map(lambda x:{**x,
 #print(final_dict)
 filtered_list=list(filter(lambda y:
     y["status"] in target_statuses,final_dict))
-print(filtered_list)
+#print(filtered_list)
 perfomance_list=list(map(lambda d:{
     **d,
     "performance":"High Latency" if d["latency"]>=300 else "Normal"
 },filtered_list))
 print(perfomance_list)
+total_sum=reduce(lambda x,y:x+y["latency"],perfomance_list,0)
+print("Total Sum:",total_sum)
