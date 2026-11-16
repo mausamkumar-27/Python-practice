@@ -20,5 +20,5 @@ updated_products=list(map(lambda z:{
     "price":round(z["price"]*0.90,2) if z["stock"]>=20 else round(z["price"]*0.95,2)
 },filtered_products))
 #print(updated_products)
-total_sum=reduce(lambda x,y:x+y["price"],updated_products,0)
+total_sum=reduce(lambda x,y:x+y["price"],0,updated_products)
 print("Total Sum:",total_sum)
