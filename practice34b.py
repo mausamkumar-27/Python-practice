@@ -13,5 +13,5 @@ key_list=["timestamp","endpoint","status","latency"]
 
 cleaned_sl=list(map(lambda x:x.strip().split("|"),server_logs))
 print(cleaned_sl)
-zip_list=list(map(lambda y:[zip(key_list,y)],cleaned_sl))
+zip_list=list(map(lambda y:zip(key_list,y),cleaned_sl))
 print(zip_list)
