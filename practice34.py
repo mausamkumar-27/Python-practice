@@ -1,4 +1,4 @@
-
+from functools import reduce
 orders = [
     {"customer": " amit sharma ", "category": "Electronics", "amount": 15000, "items": 4},
     {"customer": "Priya singh", "category": "Apparel", "amount": 3500, "items": 2},
@@ -17,4 +17,6 @@ filtered_orders=list(filter(lambda x : x["category"] in active_categories,cleane
 discount_mapping=list(map(lambda y:{
     **y,"amount":round(y["amount"]*0.90,2) if y['amount']>=3 else round (y["amount"]*0.95,2)
 },filtered_orders))
-print(discount_mapping)
+#print(discount_mapping)
+total_revenue=reduce(lambda x,y:x['amount'], discount_mapping,0)
+print("Total Revenue:",total_revenue)
