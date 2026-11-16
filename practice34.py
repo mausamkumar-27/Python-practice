@@ -18,5 +18,5 @@ discount_mapping=list(map(lambda y:{
     **y,"amount":round(y["amount"]*0.90,2) if y['amount']>=3 else round (y["amount"]*0.95,2)
 },filtered_orders))
 #print(discount_mapping)
-total_revenue=reduce(lambda x,y:x["amount"]+y["amount"], discount_mapping)
+total_revenue=reduce(lambda x,y:x+y["amount"], discount_mapping)
 print("Total Revenue:",total_revenue)
