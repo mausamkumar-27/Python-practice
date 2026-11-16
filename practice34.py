@@ -15,6 +15,6 @@ cleaned_orders=list(map(lambda name:{
 filtered_orders=list(filter(lambda x : x["category"] in active_categories,cleaned_orders))
 print(filtered_orders)
 discount_mapping=list(map(lambda y:{
-    **y,"amount":round(y["salary"]*0.90,2) if len("items")>=3 else round (y["salary"]*0.95,2)
+    **y,"amount":round(y["salary"]*0.90,2) if len(y["items"])>=3 else round (y["salary"]*0.95,2)
 },filtered_orders))
 print(discount_mapping)
