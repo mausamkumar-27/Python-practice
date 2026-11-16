@@ -13,8 +13,8 @@ cleaned_orders=list(map(lambda name:{
 },orders))
 #print(cleaned_orders)
 filtered_orders=list(filter(lambda x : x["category"] in active_categories,cleaned_orders))
-print(filtered_orders)
+#print(filtered_orders)
 discount_mapping=list(map(lambda y:{
-    **y,"amount":round(y["amount"]*0.90,2) if len(y["items"])>=3 else round (y["amount"]*0.95,2)
+    **y,"amount":round(y["amount"]*0.90,2) if y['amount']>=3 else round (y["amount"]*0.95,2)
 },filtered_orders))
 print(discount_mapping)
