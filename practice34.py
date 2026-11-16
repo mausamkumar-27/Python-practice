@@ -24,7 +24,7 @@ print("Total Revenue:",total_revenue)
 unique_categories={i['category']for i in discount_mapping}
 print(unique_categories)
 category_amount_mapping = {
-    cat: sorted([j["amount"] for j in discount_mapping if j["category"] == cat], reverse=True)
+    cat: sorted([j["amount"] for j in discount_mapping if j["category"] == cat],reverse=True)
     for cat in unique_categories
 }
 
