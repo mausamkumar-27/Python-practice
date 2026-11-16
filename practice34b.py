@@ -10,5 +10,5 @@ server_logs = [
 target_statuses = {200, 401}
 latency_criteria = lambda latency_ms: latency_ms > 300
 
-cleaned_sl=list(map(lambda x:x.strip().title().split("|"),server_logs))
+cleaned_sl=list(map(lambda x:x.strip().split("|"),server_logs))
 print(cleaned_sl)
