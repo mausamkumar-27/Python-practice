@@ -17,12 +17,12 @@ filtered_orders=list(filter(lambda x : x["category"] in active_categories,cleane
 discount_mapping=list(map(lambda y:{
     **y,"amount":round(y["amount"]*0.90,2) if y['amount']>=3 else round (y["amount"]*0.95,2)
 },filtered_orders))
-#print(discount_mapping)
+print(discount_mapping)
 #total_revenue=reduce(lambda x,y:x["amount"]+y["amount"], discount_mapping)
 total_revenue=reduce(lambda x,y:x+y["amount"], discount_mapping,0)
 print("Total Revenue:",total_revenue)
 unique_categories={i['category']for i in discount_mapping}
-#print(unique_categories)
+print(unique_categories)
 category_amount_mapping = {
     cat: sorted([j["amount"] for j in discount_mapping if j["category"] == cat], reverse=True)
     for cat in unique_categories
