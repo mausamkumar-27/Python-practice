@@ -14,4 +14,8 @@ cleaned_products=list(map(lambda x:{
 },products))
 #print(cleaned_products)
 filtered_products=list(filter(lambda y:y["category"] in active_categories,cleaned_products))
-print(filtered_products)
+#print(filtered_products)
+updated_products=list(map(lambda z:{
+    **z,
+    "price":round(z["price"]*0.90,2) if stock>=20 else round(z["price"]*0.95,2)
+},filtered_products))
