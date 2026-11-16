@@ -17,7 +17,7 @@ filtered_products=list(filter(lambda y:y["category"] in active_categories,cleane
 #print(filtered_products)
 updated_products=list(map(lambda z:{
     **z,
-    "price":round(z["price"]*0.90,2) if z["stock"]>=20 else round(z["price"]*0.95,2)
+    "price":round(z["price"]*0.90,2) if z["stock"]>=20 else round(z["price"]*1.05,2)
 },filtered_products))
 #print(updated_products)
 total_sum=reduce(lambda x,y:x+y["price"],updated_products,0)
