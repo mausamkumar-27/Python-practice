@@ -22,3 +22,10 @@ updated_products=list(map(lambda z:{
 #print(updated_products)
 total_sum=reduce(lambda x,y:x+y["price"],updated_products,0)
 print("Total Sum:",total_sum)
+unique_categories={i['category'] for i in updated_products}
+#print(unique_categories)
+catrgory_price_mapping={
+    cat:sorted([j['price'] for j in updated_products if j['category']==cat],reverse=True)
+    for cat in unique_categories
+}
+print(catrgory_price_mapping)
