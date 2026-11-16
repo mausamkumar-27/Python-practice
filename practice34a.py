@@ -1,4 +1,4 @@
-#from functools import reduce
+from functools import reduce
 products = [
     {"name": " wireless mouse ", "category": "Electronics", "price": 800, "stock": 45},
     {"name": "notebook", "category": "Stationery", "price": 120, "stock": 8},
@@ -17,5 +17,8 @@ filtered_products=list(filter(lambda y:y["category"] in active_categories,cleane
 #print(filtered_products)
 updated_products=list(map(lambda z:{
     **z,
-    "price":round(z["price"]*0.90,2) if stock>=20 else round(z["price"]*0.95,2)
+    "price":round(z["price"]*0.90,2) if z["stock"]>=20 else round(z["price"]*0.95,2)
 },filtered_products))
+#print(updated_products)
+total_sum=reduce(lambda x,y:x+y["price"],0,updated_products)
+print("Total Sum:",total_sum)
