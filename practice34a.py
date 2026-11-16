@@ -13,3 +13,5 @@ cleaned_products=list(map(lambda x:{
     "name":x["name"].strip().title()
 },products))
 #print(cleaned_products)
+filtered_products=list(filter(lambda y:y["category"] in active_categories,cleaned_products))
+print(filtered_products)
