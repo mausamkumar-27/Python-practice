@@ -23,3 +23,6 @@ total_revenue=reduce(lambda x,y:x+y["amount"], discount_mapping,0)
 print("Total Revenue:",total_revenue)
 unique_categories={i['category']for i in discount_mapping}
 print(unique_categories)
+category_amount_mapping={
+    
+}
