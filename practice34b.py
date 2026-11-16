@@ -24,3 +24,6 @@ final_dict=list(map(lambda x:{**x,
      "latency":int(x["latency"].strip().replace("ms",""))
 },cleaned_dict))
 print(final_dict)
+filtered_list=list(filter(lambda y:
+    y["status"] in target_statuses,final_dict))
+print(filtered_list)
