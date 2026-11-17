@@ -20,4 +20,6 @@ class Person:
             self._age=new_age
             print("Age updated successfully!")
 p1=Person("Mausam",20)
+#print(p1.age)
+p1.age=-5
 print(p1.age)
