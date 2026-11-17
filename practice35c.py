@@ -21,5 +21,5 @@ class Person:
             print("Age updated successfully!")
 p1=Person("Mausam",20)
 #print(p1.age)
-p1.age=-5
+p1.age=21
 print(p1.age)
