@@ -9,7 +9,7 @@ class BankAccount:
         if new_balance<0:
             print("Error: Balance never be Negative!")
         else:
-            self._balance=self._balance
+            self._balance=new_balance
             print("Balance Updated successfully")
 a=BankAccount()
 a.balance=500
