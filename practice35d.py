@@ -12,5 +12,5 @@ class BankAccount:
             self._balance=new_balance
             print("Balance Updated successfully")
 a=BankAccount()
-a.balance=500
+a.balance=-500
 print(a.balance)
