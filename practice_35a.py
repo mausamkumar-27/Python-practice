@@ -9,5 +9,5 @@ class student:
             self._marks=new_marks
             print("Marks updated successfully!")
 s1=student()
-s1._marks=120
+s1.marks=120
 print(s1.marks)
