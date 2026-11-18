@@ -3,6 +3,7 @@ class student:
         self._marks=50
     @property
     def marks(self,new_marks):
+        
         if new_marks <0 or new_marks>100:
             print("Error:Marks must be between 0 and 100!")
         else:
