@@ -44,3 +44,5 @@ unique_course={j["course"] for j in updated_dict}
 #print("computer science" in unique_course)
 total_sum_hours=reduce(lambda x,y:x+y["hours"],updated_dict,0)
 print("Total Hours: ",total_sum_hours)
+name_to_marks_map=dict(zip(passed_name,[i.marks for i in filtered_data]))
+print(name_to_marks_map)
