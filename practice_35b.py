@@ -15,7 +15,7 @@ class Thermostat:
 t1=Thermostat("Bedroom",22)
 print(f"{t1.room_name} initial temp:{t1.temperature}°C")
 t1.temperature=35
-t1.temperature=16
+t1.temperature=19
 print(f"{t1.room_name} final temp:{t1.temperature}°C")
 t2=Thermostat("Livingroom")
 print(f"{t2.room_name} default temp:{t2.temperature}°C")
