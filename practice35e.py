@@ -15,7 +15,7 @@ my_dict=list(map(lambda y:dict(y),zip_cleaned))
 #print(my_dict)
 updated_dict=list(map(lambda x:{
     **x,
-    "name":x["name"].title(),"course":x["course"].lower(),"marks":int(x["marks"]),"hours":int(x["hours"])
+    "name":x["name"].title(),"course":x["course"].strip().lower(),"marks":int(x["marks"]),"hours":int(x["hours"])
 },my_dict))
 #print(updated_dict)
 class student:
