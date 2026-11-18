@@ -37,4 +37,3 @@ for p in filtered_data:
     print(f"Name:{p.name} , Course:{p.course} , Marks:{p.marks} , Hours:{p.hours} , Passed:{p.is_passed()}")'''
 check=list(map(lambda y:student(**y),updated_dict))
 print(check)
-print(self.name)
