@@ -30,8 +30,8 @@ class student:
         else:
             return False
 student_object=[student(**item) for item in updated_dict]
-#for s in student_object:
-    #print(f"Name:{s.name} , Course:{s.course} , Marks:{s.marks} , Hours:{s.hours} , Passed:{s.is_passed()}")
-filtered_data=list(filter(lambda x:x.is_passed(),student_object))
+for s in student_object:
+    print(f"Name:{s.name} , Course:{s.course} , Marks:{s.marks} , Hours:{s.hours} , Passed:{s.is_passed()}")
+'''filtered_data=list(filter(lambda x:x.is_passed(),student_object))
 for p in filtered_data:
-    print(f"Name:{p.name} , Course:{p.course} , Marks:{p.marks} , Hours:{p.hours} , Passed:{p.is_passed()}")
+    print(f"Name:{p.name} , Course:{p.course} , Marks:{p.marks} , Hours:{p.hours} , Passed:{p.is_passed()}")'''
