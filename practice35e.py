@@ -46,3 +46,5 @@ total_sum_hours=reduce(lambda x,y:x+y["hours"],updated_dict,0)
 print("Total Hours: ",total_sum_hours)
 name_to_marks_map=dict(zip(passed_name,[i.marks for i in filtered_data]))
 print(name_to_marks_map.get("Rahul Kumar"))
+course_to_map={c:max(i.marks for i in student_object if i.course==c) for c in unique_course}
+print(course_to_map)
