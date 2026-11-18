@@ -1,4 +1,4 @@
-#from functools import reduce
+from functools import reduce
 raw_records = [
     "  rahul kumar , computer science , 85 , 12  ",
     "Priya Sharma, Electronics, 92, 15",
@@ -42,3 +42,5 @@ passed_name=[i.name for i in filtered_data]
 unique_course={j["course"] for j in updated_dict}
 #print(unique_course)
 #print("computer science" in unique_course)
+total_sum_hours=reduce(lambda x,y:x+y["hours"],updated_dict,0)
+print("Total Hours: ",total_sum_hours)
