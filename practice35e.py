@@ -37,7 +37,7 @@ filtered_data=list(filter(lambda x:x.is_passed(),student_object))
 #print(filtered_data)
 #for p in filtered_data:
     #print(f"Name:{p.name} , Course:{p.course} , Marks:{p.marks} , Hours:{p.hours} , Passed:{p.is_passed()}")
-passed_name=[i.name for i in filtered_data]
+passed_name=[i.name.strip() for i in filtered_data]
 #print(passed_name)
 unique_course={j["course"] for j in updated_dict}
 #print(unique_course)
@@ -45,4 +45,4 @@ unique_course={j["course"] for j in updated_dict}
 total_sum_hours=reduce(lambda x,y:x+y["hours"],updated_dict,0)
 print("Total Hours: ",total_sum_hours)
 name_to_marks_map=dict(zip(passed_name,[i.marks for i in filtered_data]))
-print(name_to_marks_map)
+print(name_to_marks_map.get("Rahul Kumar"))
