@@ -39,4 +39,5 @@ filtered_data=list(filter(lambda x:x.is_passed(),student_object))
     #print(f"Name:{p.name} , Course:{p.course} , Marks:{p.marks} , Hours:{p.hours} , Passed:{p.is_passed()}")
 passed_name=[i.name for i in filtered_data]
 #print(passed_name)
-unique_course={}
+unique_course={j.course for j in updated_dict}
+print(unique_course)
