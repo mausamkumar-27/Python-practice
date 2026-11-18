@@ -19,5 +19,5 @@ class Employee:
 
 # Execution Lines:
 emp = Employee()        # Step A
-emp.salary = 8000       # Step B
+emp.salary = 18000       # Step B
 print(emp.salary)       # Step C
