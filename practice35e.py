@@ -30,7 +30,8 @@ class student:
         else:
             return False
 student_object=list(map(lambda y:student(**y),updated_dict))
-
+for i in student_object:
+    print(f"{i.name},{i.course},{i.marks},{i.hours}")
 
 '''filtered_data=list(filter(lambda x:x.is_passed(),student_object))
 for p in filtered_data:
