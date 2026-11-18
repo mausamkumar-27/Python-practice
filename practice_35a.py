@@ -1,6 +1,6 @@
 class student:
     def __init__(self):
-        self.marks=50
+        self._marks=50
     @property
     def marks(self,new_marks):
         if new_marks <0 or new_marks>100:
@@ -9,5 +9,5 @@ class student:
             self._marks=new_marks
             print("Marks updated successfully!")
 s1=student()
-s1.marks=120
+s1._marks=120
 print(s1.marks)
