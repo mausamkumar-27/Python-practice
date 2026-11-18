@@ -1,21 +1,23 @@
-class student:
+class Employee:
     def __init__(self):
-        self._marks = 50
+        # 1. ASLI DATA BOX (Memory mein tijori)
+        self._salary = 25000
 
-    # 1. Pehle Getter (@property) aayega
+    # 2. GATE 1: GETTER (Sirf bahar data bhejne ka darwaza)
     @property
-    def marks(self):
-        return self._marks
+    def salary(self):
+        return self._salary
 
-    # 2. Phir Setter (@marks.setter) aayega
-    @marks.setter
-    def marks(self, new_marks):
-        if new_marks < 0 or new_marks > 100:
-            print("Error: Marks must be between 0 and 100!")
+    # 3. GATE 2: SETTER (Sirf andar data daalne aur check karne ka darwaza)
+    @salary.setter
+    def salary(self, new_salary):
+        if new_salary < 10000:
+            print("Error: Salary 10000 se kam nahi ho sakti!")
         else:
-            self._marks = new_marks
-            print("Marks updated successfully!")
+            self._salary = new_salary
+            print("Salary updated!")
 
-s1 = student()
-s1.marks = 120
-print(s1.marks)
+# Execution Lines:
+emp = Employee()        # Step A
+emp.salary = 8000       # Step B
+print(emp.salary)       # Step C
