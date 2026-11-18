@@ -48,3 +48,10 @@ name_to_marks_map=dict(zip(passed_name,[i.marks for i in filtered_data]))
 print(name_to_marks_map.get("Rahul Kumar"))
 course_to_map={c:max(i.marks for i in student_object if i.course==c) for c in unique_course}
 print(course_to_map)
+print("\n--- 📊 GRAND ANALYTICS REPORT ---")
+print(f"Total Study Hours (All Students): {total_sum_hours}")
+print(f"Unique Courses: {unique_course}")
+
+print("\nCourse-wise Highest Marks:")
+for course, highest_marks in course_to_map.items():
+  print(f"  • {course.title()}: {highest_marks} Marks")
