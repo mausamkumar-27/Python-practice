@@ -1,16 +1,16 @@
 class BankAccount:
     def __init__(self,holder_name,initial_balance):
         self.holder_name=holder_name
-        self.initial_balance=initial_balance
+        self._balance=initial_balance
     @property
     def balance(self):
-        return self.balance
+        return self._balance
     @balance.setter
     def balance(self,new_balance):
         if new_balance<0:
             print("Error Balance can't be Negative!")
         else:
-            self.balance=new_balance
+            self._balance=new_balance
             print("Balance Updated!")
 class SavingAccount(BankAccount):
     def __init__(self,holder_name,initial_balance,interest_rate):
