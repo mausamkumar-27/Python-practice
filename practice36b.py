@@ -4,6 +4,7 @@ class BankAccount:
         self._balance=initial_balance
     @property
     def balance(self):
+        print("GETTER CHALAA...")
         return self._balance
     @balance.setter
     def balance(self,new_balance):
