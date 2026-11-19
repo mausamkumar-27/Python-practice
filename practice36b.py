@@ -18,7 +18,7 @@ class SavingAccount(BankAccount):
         self.interest_rate=interest_rate
     def add_interest(self):
         interest=(self.balance*self.interest_rate)/100
-        self.balance=self.interest_rate+interest
+        self.balance=self.balance+interest
         print(f"Interest of {interest} added. New Balance:{self.balance}")
 acc=SavingAccount("Mausam",1000,5)
 print(f"Account Holder:{acc.holder_name},Initial Balance:{acc.balance}")
