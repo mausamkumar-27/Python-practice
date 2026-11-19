@@ -6,7 +6,7 @@
 emp=Employee("Mausam")
 print(emp.name)
 emp.display()'''
-class student:
+'''class student:
     def __init__(self,name,roll_no):
         self._roll_no=roll_no
 class LPUstudent(student):
@@ -14,4 +14,10 @@ class LPUstudent(student):
         print(f"Roll Number:{self._roll_no}")
 s=LPUstudent("Mausam",101)
 s.show_roll()
-print(s._roll_no)
+print(s._roll_no)'''
+
+class BankAccount:
+    def __init__(self,owner,balance):
+        self.owner=owner
+        self.__balance=balance
+acc=BankAccount("Mausam",50000)
