@@ -3,7 +3,7 @@ class Employee:
         self.name=name
         self.id=id
     def show_details(self):
-        print("Employee Name:{self.name},ID:{self.id}")
+        print(f"Employee Name:{self.name},ID:{self.id}")
 class Programmer(Employee):
     def __init__(self,name,id,language):
         super().__init__(name,id)
