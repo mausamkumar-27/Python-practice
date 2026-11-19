@@ -21,3 +21,4 @@ class BankAccount:
         self.owner=owner
         self.__balance=balance
 acc=BankAccount("Mausam",50000)
+print(acc._BankAccount__balance)
