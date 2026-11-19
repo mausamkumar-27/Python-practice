@@ -22,5 +22,5 @@ class SavingAccount(BankAccount):
         print(f"Interest of {interest} added. New Balance:{self.balance}")
 acc=SavingAccount("Mausam",1000,5)
 print(f"Account Holder:{acc.holder_name},Initial Balance:{acc.balance}")
-acc.balance=-500
+acc.balance=2000
 acc.add_interest()
