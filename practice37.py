@@ -1,7 +1,7 @@
 class MathsUtils:
-    #@staticmethod
-    def add(self,a,b):
+    @staticmethod
+    def add(a,b):
         return a+b
-obj=MathsUtils()
+#obj=MathsUtils()
 result=MathsUtils.add(10,20)
 print(f"Sum:{result}")
