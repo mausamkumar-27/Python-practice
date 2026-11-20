@@ -15,5 +15,5 @@ class UserAccount:
             print(f"User:{self.username} | Weak Password")
 a=UserAccount.is_strong_password("abc23")
 print(a)
-b=UserAccount("Mausam Kumar","Py2026")
+b=UserAccount("Mausam Kumar","Python2026")
 b.check_security()
