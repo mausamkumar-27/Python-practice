@@ -18,3 +18,4 @@ class TemperatureConverture:
         print(f"City:{self.city_name} | Temp:{self.temp_celsius}°C  ({f}°F)")
 a=TemperatureConverture.Fahren(25)
 print(a)
+b=TemperatureConverture("Delhi",30)
