@@ -19,3 +19,4 @@ class TemperatureConverture:
 a=TemperatureConverture.Fahren(25)
 print(a)
 b=TemperatureConverture("Delhi",30)
+b.show_weather()
