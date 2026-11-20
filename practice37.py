@@ -13,4 +13,6 @@ class TemperatureConverture:
     @staticmethod
     def Fahren(c):
         return (c*9/5) +32
-    
+    def show_weather(self):
+        f=TemperatureConverture.Fahren(self.temp_celsius)
+        print(f"City:{self.city_name} | Temp:{self.temp_celsius}")
