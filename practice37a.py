@@ -6,5 +6,5 @@ else:
         if n%i==0:
             print("Composite No")
             break
-        else:
-            print("Not Composite")
+    else:
+        print("Not Composite")
