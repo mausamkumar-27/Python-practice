@@ -1,5 +1,5 @@
 class MathsUtils:
-    @staticmethod
+    #@staticmethod
     def add(a,b):
         return a+b
 result=MathsUtils.add(10,20)
