@@ -15,7 +15,7 @@ asc(5)
 print()'''
 def total(n):
     if n<1:
-        return
+        return 0
     elif n==0:
         return 0
     else:
