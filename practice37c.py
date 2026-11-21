@@ -3,8 +3,8 @@ n=int(input())
 l=[int(i) for i in range(1,n+1)]
 a=reduce(lambda x,y:x+y,l)
 print("Total Sum:",a)'''
-n=int(input())
-'''def total_sum(n):
+'''n=int(input())
+def total_sum(n):
     if n<=0:
         return 0
     elif n==1:
@@ -16,4 +16,5 @@ def no(n):
     if n<1:
         return
     print(n,end=" ")
-    print
+    no(n-1)
+print(no(5))
