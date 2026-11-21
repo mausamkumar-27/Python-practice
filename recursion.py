@@ -34,6 +34,6 @@ print(a)'''
 def gcd(a,b):
     if b==0:
         return a
-    return gcd(b,a%b)
-c=gcd(18,24)
+    return gcd(a,b%a)
+c=gcd(15,25)
 print(c)
