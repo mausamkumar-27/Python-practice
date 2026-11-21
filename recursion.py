@@ -31,4 +31,9 @@ print(a)'''
         total(n-1)
 a=total(5)
 print(a)'''
-
+def gcd(a,b):
+    if b==0:
+        return a
+    return gcd(b,a%b)
+c=gcd(18,24)
+print(c)
