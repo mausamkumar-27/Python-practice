@@ -32,7 +32,7 @@ print(a)'''
 a=total(5)
 print(a)'''
 s=input()
-l=s.split(" ")
+l=s.split("")
 d={int(i):i.count() for i in l}
 print(d)
 
