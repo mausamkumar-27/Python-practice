@@ -12,6 +12,7 @@ n=int(input())
     else:
         return n+total_sum(n-1)
 print("Total Sum:",total_sum(n))'''
-l=[int(i) for i in input().split("")]
+n=input()
+l=[int(i) for i in input(n).split("")]
 for i in l:
     print(i,end=" ")
