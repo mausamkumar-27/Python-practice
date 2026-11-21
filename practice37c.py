@@ -12,3 +12,8 @@ n=int(input())
     else:
         return n+total_sum(n-1)
 print("Total Sum:",total_sum(n))'''
+def no(n):
+    if n<1:
+        return
+    print(n,end=" ")
+    print
