@@ -21,4 +21,5 @@ def total(n):
     else:
         total(n-1)
         return n+total(n-1)
-total(5)
+a=total(5)
+print(a)
