@@ -23,12 +23,15 @@ print()'''
         return n+total(n-1)
 a=total(5)
 print(a)'''
-def total(n):
+'''def total(n):
     if n<1 or n==0:
         return 0
     else:
         return n+total(n-1)
         total(n-1)
 a=total(5)
-print(a)
+print(a)'''
+s=input()
+l=s.split(" ")
+d={}
 
