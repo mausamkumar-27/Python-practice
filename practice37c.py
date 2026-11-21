@@ -18,4 +18,4 @@ def no(n):
     else:
         print(n,end=" ")
         no(n-1)
-print(no(5))
+no(5)
