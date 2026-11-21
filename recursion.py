@@ -33,5 +33,6 @@ a=total(5)
 print(a)'''
 s=input()
 l=s.split(" ")
-d={}
+d={int(i):int(i).count() for i in l}
+print(d)
 
