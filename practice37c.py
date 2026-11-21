@@ -19,3 +19,4 @@ def no(n):
         print(n,end=" ")
         no(n-1)
 no(5)
+print()
