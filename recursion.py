@@ -33,6 +33,6 @@ a=total(5)
 print(a)'''
 s=input()
 l=s.split(" ")
-d={int(i):int(i).count() for i in l}
+d={int(i):i.count() for i in l}
 print(d)
 
