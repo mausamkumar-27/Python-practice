@@ -13,7 +13,7 @@ print()'''
     print(n,end=" ")
 asc(5)
 print()'''
-def total(n):
+'''def total(n):
     if n<1:
         return 0
     elif n==0:
@@ -22,4 +22,13 @@ def total(n):
         total(n-1)
         return n+total(n-1)
 a=total(5)
+print(a)'''
+def total(n):
+    if n<1 or n==0:
+        return 0
+    else:
+        return n+total(n-1)
+        total(n-1)
+a=total(5)
 print(a)
+
