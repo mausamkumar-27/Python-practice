@@ -31,8 +31,4 @@ print(a)'''
         total(n-1)
 a=total(5)
 print(a)'''
-s=input()
-l=s.split(" ")
-d={int(i):i.count("7") for i in l}
-print(d)
 
