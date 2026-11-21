@@ -17,4 +17,4 @@ def no(n):
         return
     print(n,end=" ")
     no(n-1)
-print(no(5))
+print(no(-5))
