@@ -32,8 +32,8 @@ print(a)'''
 a=total(5)
 print(a)'''
 def gcd(a,b):
-    if a==0:
-        return b
-    return gcd(a,b%a)
+    if b==0:
+        return a
+    return gcd(b%a,a)
 c=gcd(15,25)
 print(c)
