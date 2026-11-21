@@ -20,5 +20,5 @@ def total(n):
         return 0
     else:
         total(n-1)
-        print(n+total(n-1))
+        return n+total(n-1)
 total(5)
