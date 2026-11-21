@@ -14,7 +14,7 @@ def total_sum(n):
 print("Total Sum:",total_sum(n))'''
 def no(n):
     if n<1:
-        return
+        return False
     print(n,end=" ")
     no(n-1)
-print(no(-5))
+print(no(5))
