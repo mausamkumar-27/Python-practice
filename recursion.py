@@ -54,6 +54,6 @@ print(c)'''
 c=gcd(8,69)
 print(c)'''
 n=int(input())
-for i in range (n,0,-2):
+for i in range (n,-1,-3):
     print(i,end=" ")
 print()
