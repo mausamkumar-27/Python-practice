@@ -41,6 +41,7 @@ print(c)'''
 def gcd(a,b):
     if b==0:
         return a
-    gcd(b,a%b)
+    else:
+        return gcd(b,a%b)
 c=gcd(42,9)
 print(c)
