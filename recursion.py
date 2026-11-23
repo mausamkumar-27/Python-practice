@@ -53,7 +53,16 @@ print(c)'''
         return gcd (b%a,a)
 c=gcd(8,69)
 print(c)'''
-n=int(input())
+'''n=int(input())
 for i in range (n,-1,-3):
     print(i,end=" ")
-print()
+print()'''
+n=int(input())
+def no(a):
+    if a <1:
+        return 
+    else:
+        print(a,end=" ")
+    no(a-1)
+c=no(n)
+print(c)
