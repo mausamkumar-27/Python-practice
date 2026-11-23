@@ -63,6 +63,6 @@ def no(a):
         return 
     else:
         print(a,end=" ")
-    no(a-1)
+        no(a-1)
 c=no(n)
 print(c)
