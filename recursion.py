@@ -38,10 +38,18 @@ print(a)'''
 c=gcd(4,15)
 print(c)'''
 
-def gcd(a,b):
+'''def gcd(a,b):
     if b==0:
         return a
     else:
         return gcd(b,a%b)
 c=gcd(42,9)
-print(c)
+print(c)'''
+
+'''def gcd(a,b):
+    if a==0:
+        return b
+    else:
+        return gcd (b%a,a)
+c=gcd(8,69)
+print(c)'''
