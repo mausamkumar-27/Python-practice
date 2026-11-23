@@ -31,9 +31,16 @@ print(a)'''
         total(n-1)
 a=total(5)
 print(a)'''
-def gcd(a,b):
+'''def gcd(a,b):
     if a==0:
         return b
     return gcd(b%a,a)
-c=gcd(15,25)
+c=gcd(4,15)
+print(c)'''
+
+def gcd(a,b):
+    if b==0:
+        return a
+    gcd(b,a%b)
+c=gcd(42,9)
 print(c)
