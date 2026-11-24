@@ -1,4 +1,4 @@
-s=input()
+'''s=input()
 def reverse(n):
     if len(n)<=1:
         return True
@@ -9,4 +9,4 @@ def reverse(n):
             p=n[1:-1]
     return reverse(p)
 b=reverse(s)
-print(b)
+print(b)'''
