@@ -1,7 +1,7 @@
 from functools import reduce
 n=input()
 k=int(input())
-def superDigit(n):
+def superDigit(n,k):
     if int(n)<10:
         return n
     else:
@@ -9,5 +9,5 @@ def superDigit(n):
         s=reduce(lambda x,y:x+y,l)
         total=s*k
     return total
-b=superDigit(n)
+b=superDigit(n,k)
 print(b)
