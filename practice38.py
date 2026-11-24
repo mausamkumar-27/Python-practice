@@ -8,6 +8,6 @@ def superDigit(n,k):
         l=[int(i) for i in n]
         s=reduce(lambda x,y:x+y,l)
         total=s*k
-    return str(total)
+    return superDigit(str(total),1)
 b=superDigit(n,k)
 print(b)
