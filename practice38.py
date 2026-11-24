@@ -2,7 +2,7 @@ from functools import reduce
 n=input()
 k=int(input())
 def superDigit(n,k):
-    if int(n)<10:
+    if int(n)<10 and k==1:
         return n
     else:
         l=[int(i) for i in n]
