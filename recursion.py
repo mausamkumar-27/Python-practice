@@ -64,5 +64,7 @@ def no(a):
     else:
         print(a,end=" ")
         no(a-1)
+
 c=no(n)
 print(c)
+print()
