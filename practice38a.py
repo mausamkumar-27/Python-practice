@@ -1,6 +1,6 @@
 s=input()
 def reverseString(n):
-    if s[::-1]==s:
+    if n[::-1]==n:
         return True
     else:
         return False
