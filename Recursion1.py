@@ -5,3 +5,5 @@ def reverse(n):
     else:
         p=n[1:-1]
     return reverse(p)
+b=reverse(s)
+print(b)
