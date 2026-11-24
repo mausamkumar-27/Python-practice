@@ -7,6 +7,6 @@ def reverse(n):
             return False
         else:
             p=n[1:-1]
-        return reverse(p)
+    return reverse(p)
 b=reverse(s)
 print(b)
