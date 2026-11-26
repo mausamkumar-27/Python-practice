@@ -4,8 +4,9 @@ m=int(input())
 def adjusted_weight(weights,modifier,index):
     if index==len(weights):
         return 0
-    else:
-        return weights[index]+adjusted_weight(weights,modifier,index+1)
+    
+    return weights[index]+adjusted_weight(weights,modifier,index+1)
+    
     if modifier>0:
         return total-modifier
     elif modifier<0:
