@@ -9,5 +9,5 @@ def adjusted_weight(weights,modifier,index):
         return weights-modifier
     else:'''
 n=int(input())
-w=[int(input()) for i in range(1,n+1)]
+w=[input().split() for i in range(1,n+1)]
 print(w)
