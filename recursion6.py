@@ -8,6 +8,6 @@ def sumDigit(n):
         return int(n)
     else:
         a=reduce(lambda x,y:x+int(y),n,0)
-    return sumDigit(a)
+    return sumDigit(str(a))
 d=sumDigit(str(n))
 print(d)
