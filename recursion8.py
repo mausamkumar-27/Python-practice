@@ -1,13 +1,15 @@
-
-'''n=int(input())
-w=[int(input()) for i in range(1,n+1)]
-m=int(input())
-def adjusted_weight(weights,modifier,index):
-    if m<0:
-        return weights+modifier
-    elif m>=0:
-        return weights-modifier
-    else:'''
 n=int(input())
 w=[int(i) for i in input().split()]
-print(*w)
+m=int(input())
+def adjusted_weight(weights,modifier,index):
+    if index==len(weights):
+        total=0
+    else:
+        total=weights[index]+adjusted_weight(weights,modifier,index+1)
+    if modifier>0:
+        return total-modifier
+    elif modifier<0:
+        return total+modifier
+    else:
+        return total
+b=adjusted_weight(w,m)
