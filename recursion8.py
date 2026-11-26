@@ -3,9 +3,9 @@ w=[int(i) for i in input().split()]
 m=int(input())
 def adjusted_weight(weights,modifier,index):
     if index==len(weights):
-        total=0
+        return 0
     else:
-        total=weights[index]+adjusted_weight(weights,modifier,index+1)
+        return weights[index]+adjusted_weight(weights,modifier,index+1)
     if modifier>0:
         return total-modifier
     elif modifier<0:
