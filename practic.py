@@ -19,5 +19,5 @@ vowel="AEIOUaeiou"
 d={i:s.count(i) for i in s if i in vowel}
 print(d)'''
 
-n=int(input())
+n=input().strip().split()
 print(n)
