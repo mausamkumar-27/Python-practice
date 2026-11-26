@@ -14,7 +14,10 @@ updated_list = list(updated_set)
 #print(updated_list)
 team = [i for i, j in zip(name_list, score_list) if updated_list[1] ==j ]
 print(*sorted(team),sep=", ")'''
-s=input()
+'''s=input()
 vowel="AEIOUaeiou"
 d={i:s.count(i) for i in s if i in vowel}
-print(d)
+print(d)'''
+
+n=int(input())
+print(n)
