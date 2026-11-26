@@ -12,4 +12,5 @@ def adjusted_weight(weights,modifier,index):
         return total+modifier
     else:
         return total
-b=adjusted_weight(w,m)
+b=adjusted_weight(w,m,0)
+print(b)
