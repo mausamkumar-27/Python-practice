@@ -5,4 +5,6 @@ def count_ways(n):
     elif n<0:
         return 0
     else:
-        return
+        return count_ways(n-1)+count_ways(n-2)
+b=count_ways(s)
+print(b)
