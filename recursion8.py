@@ -4,7 +4,7 @@ m=int(input())
 def sum_weight(weights,index):
     if index==len(weights):
         return 0
-    return weights[index]+adjusted_weight(weights,index+1)
+    return weights[index]+sum_weight(weights,index+1)
 def adjusted_weight(weights,modifier,index):
     total=sum_weight(weights,index)
     if modifier>0:
