@@ -19,5 +19,7 @@ vowel="AEIOUaeiou"
 d={i:s.count(i) for i in s if i in vowel}
 print(d)'''
 
-n=input().strip().split()
-print(n)
+n=[int(i) for i in input().strip().split()]
+m=min(n)
+M=max(n)
+#print(M-n)
