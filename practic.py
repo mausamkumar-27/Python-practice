@@ -1,7 +1,7 @@
 # Write your code here...
 n = int(input())
 name_list = [input().strip() for i in range(1, n + 1)]
-print(name_list)
+print(*name_list)
 #score_list = [int(input()) for j in range(1, n + 1)]
 #for name, score in zip(name_list, score_list):
   #print(name, score)
