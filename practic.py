@@ -13,4 +13,4 @@ updated_set = sorted(score_set, reverse=True)
 updated_list = list(updated_set)
 #print(updated_list)
 team = [i for i, j in zip(name_list, score_list) if updated_list[1] ==j ]
-print(*sorted(team))
+print(*sorted(team),sep=",")
