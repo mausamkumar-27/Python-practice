@@ -22,4 +22,5 @@ print(d)'''
 n=[int(i) for i in input().strip().split()]
 m=min(n)
 M=max(n)
-#print(M-n)
+#print(M,m)
+print(M-n)
