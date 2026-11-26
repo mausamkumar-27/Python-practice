@@ -1,5 +1,5 @@
 # Write your code here...
-n = int(input())
+'''n = int(input())
 name_list = [input().strip() for i in range(1, n + 1)]
 #print(*name_list)
 score_list = [int(input()) for j in range(1, n + 1)]
@@ -13,4 +13,8 @@ updated_set = sorted(score_set, reverse=True)
 updated_list = list(updated_set)
 #print(updated_list)
 team = [i for i, j in zip(name_list, score_list) if updated_list[1] ==j ]
-print(*sorted(team),sep=", ")
+print(*sorted(team),sep=", ")'''
+s=input()
+vowel="AEIOUaeiou"
+a=[s.count(i) for i in s if i in vowel]
+print(a)
