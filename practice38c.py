@@ -7,6 +7,8 @@ s=int(input())
 def geometric_sum(n):
     if n==0:
         return 0
+    elif n==1:
+        return 1
     else:
         return geometric_sum(1/(n-1)**2)+geometric_sum(1/(n-2)**2)
 a=geometric_sum(s)
