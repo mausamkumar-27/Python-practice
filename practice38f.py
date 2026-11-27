@@ -8,5 +8,5 @@ unique_scores = sorted({score for _, score in teams}, reverse=True)
 print(unique_scores)
 second_highest = unique_scores[1]
 
-'''runners_up = sorted(name for name, score in teams if score == second_highest)
-print(", ".join(runners_up))'''
+runners_up = sorted(name for name, score in teams if score == second_highest)
+print(", ".join(runners_up))
