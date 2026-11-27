@@ -8,6 +8,7 @@ def geometric_sum(n):
     if n==0:
         return 0
     else:
-        return geometric_sum(1/n**2)+geometric_sum(1/(n-1)**2)
+        return geometric_sum(1/(n-1)**2)+geometric_sum(1/(n-2)**2)
 a=geometric_sum(s)
-print(f"{a:.6f}")
+b=a+(1/s**2)
+print(f"{b:.6f}")
