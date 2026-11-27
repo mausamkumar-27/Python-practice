@@ -9,4 +9,4 @@ print(unique_scores)
 second_highest = unique_scores[1]
 
 runners_up = sorted(name for name, score in teams if score == second_highest)
-print(runners_up)
+print(*runners_up)
