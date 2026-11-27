@@ -10,7 +10,9 @@ def geometric_sum(n):
     elif n==1:
         return 1
     else:
-        return geometric_sum(n-1)+geometric_sum(n-2)
+        return ((1/n**2) + geometric_sum(n-1))
 a=geometric_sum(s)
-b=a+(1/s**2)
-print(f"{b:.6f}")
+if s>0:
+    print(f"{a:.6f}")
+else:
+    print("n must be positive")
