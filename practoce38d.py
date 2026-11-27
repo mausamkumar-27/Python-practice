@@ -1,9 +1,9 @@
 n=int(input())
 c=int(input())
 p=int(input())
-a=n*c
-b=a+(p-n)*5
+
+b=c+(p-n)*5
 if p<=n:
-    print(f"{a}")
+    print(f"{c}")
 else:
     print(f"{b}")
