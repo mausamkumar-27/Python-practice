@@ -16,7 +16,7 @@ my_dict={
 #print(my_dict)
 my_dict2={k:max(v)*90/100.0 for k,v in my_dict.items()}
 print(my_dict2)
-price_item=[(i[2].strip().upper(),float(i[3].strip())) for i in up_list]
+price_item=[float(i[3].strip()),(i[2].strip().upper()) for i in up_list]
 #print(price_item)
 Max_price,Top_item,=max(price_item)
 print(f"Highest Priced Item:{Top_item} ({Max_price})")
