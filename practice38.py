@@ -7,7 +7,7 @@ transactions = [
 ]
 list_trac=[i.split("|") for i in transactions]
 up_list=[j for j in list_trac if len(j)==4]
-print(up_list)
+#print(up_list)
 my_set={j.strip().upper() for i,j,k,l in up_list}
 print("Categories:",my_set)
 my_dict={
@@ -16,3 +16,5 @@ my_dict={
 #print(my_dict)
 my_dict2={k:max(v)*90/100.0 for k,v in my_dict.items()}
 print(my_dict2)
+price_item=[(i[2].strip().upper(),float(i[3].strip())) for i in up_list]
+print(price_item)
