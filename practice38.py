@@ -1,9 +1,10 @@
-records = [
-    "  aarav sharma | cs101 | 78.4  ",
-    "DIYA VERMA|cs101|91.2",
-    "Aarav Sharma | ma102 | 85.0",
-    "kabir nair | PH103 | 93.6",
-    "invalid_entry_without_score",
+entries = [
+    "  m101 | eng | 15, 25, 15, 40  ",
+    "M102|ENG|20, 15, 20",
+    "m201 | ops | 10, 30, 50, 30",
+    "invalid_record_here",
 ]
-up_records=[i.split("|") for i in records]
-print(up_records)
+entries_list=[i.strip().split("|") for i in entries]
+#print(entries_list)
+up_list=[j for j in entries_list if len(j)==3]
+print(up_list)
