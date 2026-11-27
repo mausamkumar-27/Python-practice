@@ -1,8 +1,8 @@
 n = int(input())
 raw_lines = [input().split() for i in range(n)]
 print(raw_lines)
-#teams = [(name, int(score)) for name, score in raw_lines]
-#print(teams)
+teams = [(name, int(score)) for name, score in raw_lines]
+print(teams)
 
 '''unique_scores = sorted({score for _, score in teams}, reverse=True)
 second_highest = unique_scores[1]
