@@ -10,7 +10,7 @@ def geometric_sum(n):
     elif n==1:
         return 1
     else:
-        return geometric_sum(1/(n-1)**2)+geometric_sum(1/(n-2)**2)
+        return geometric_sum(n-1)+geometric_sum(n-2)
 a=geometric_sum(s)
 b=a+(1/s**2)
 print(f"{b:.6f}")
