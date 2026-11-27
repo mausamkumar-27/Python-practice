@@ -19,4 +19,4 @@ print(my_dict2)
 price_item=[(i[2].strip().upper(),float(i[3].strip())) for i in up_list]
 #print(price_item)
 Top_item,Max_price=max(price_item)
-print(f"{Top_item} {Max_price}")
+print(f"Highest Priced Item:{Top_item} {Max_price}")
