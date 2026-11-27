@@ -5,5 +5,5 @@ records = [
     "kabir nair | PH103 | 93.6",
     "invalid_entry_without_score",
 ]
-up_records=records.split("|")
+up_records=[i.split("|") for i in records]
 print(up_records)
