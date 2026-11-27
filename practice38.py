@@ -11,6 +11,6 @@ up_list=[j for j in list_trac if len(j)==4]
 my_set={j.strip().upper() for i,j,k,l in up_list}
 print("Categories:",my_set)
 my_dict={
-    cat:sorted([float(j[3].strip()) for j in up_list if j[1].strip().upper()==cat]) for cat in my_set
+    cat:sorted([float(j[3].strip()) for j in up_list if j[1].strip().upper()==cat]) for cat in sorted(my_set)
 }
 print(my_dict)
