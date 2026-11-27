@@ -7,6 +7,6 @@ entries = [
 entries_list=[i.strip().split("|") for i in entries]
 #print(entries_list)
 up_list=[j for j in entries_list if len(j)==3]
-print(up_list)
+#print(up_list)
 my_dict={j.upper():k.split() for i,j,k in up_list}
 print(my_dict)
