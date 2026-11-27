@@ -13,4 +13,6 @@ print("Categories:",my_set)
 my_dict={
     cat:sorted([float(j[3].strip()) for j in up_list if j[1].strip().upper()==cat]) for cat in sorted(my_set)
 }
-print(my_dict)
+#print(my_dict)
+my_dict2={k:max(v)*90/100.0 for k,v in my_dict.items()}
+print(my_dict2)
