@@ -1,12 +1,10 @@
-entries = [
-    "  m101 | eng | 15, 25, 15, 40  ",
-    "M102|ENG|20, 15, 20",
-    "m201 | ops | 10, 30, 50, 30",
-    "invalid_record_here",
+transactions = [
+    "  ord1 | books | python book | 400  ",
+    "ORD2|BOOKS|C++ Guide|400",
+    "ord3 | electronics | laptop | 1500",
+    "ord4 | electronics | mouse | 1200",
+    "invalid_transaction_entry",
 ]
-entries_list=[i.strip().split("|") for i in entries]
-#print(entries_list)
-up_list=[j for j in entries_list if len(j)==3]
+list_trac=[i.split("|") for i in transactions]
+up_list=[j for j in list_trac if len(j)==4]
 print(up_list)
-my_dict={j.upper().strip():k.split() for i,j,k in up_list}
-print(my_dict)
