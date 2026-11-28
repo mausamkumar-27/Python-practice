@@ -20,5 +20,3 @@ tup_list=[(i.strip(),int(j)) for i,j in filtered_list3]
 print(tup_list)
 tup_sub=[i for i,j in tup_list]
 print(tuple(tup_sub))
-tup1=tuple(i for i in tup_sub)
-print(tup1)
