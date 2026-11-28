@@ -10,5 +10,5 @@ raw_records = [
 ]
 
 min_score = 4
-filtered_list=list(filter(lambda x:":" in x and x,raw_records))
+filtered_list=list(filter(lambda x:":" in x and x.strip().lower().endswith("pts"),raw_records))
 print(filtered_list)
