@@ -24,6 +24,8 @@ if tup_sub.count("math")>0:
     i=tup_sub.index("math")
 else:
     tup_list.append(("math",0))
-print(tup_list)
+#print(tup_list)
 unique_sub={i for i,j in tup_list if i.isalpha()}
 print(unique_sub)
+updated_set=unique_sub.discard("science")
+print(updated_set)
