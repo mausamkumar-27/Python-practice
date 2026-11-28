@@ -19,4 +19,9 @@ filtered_list3=list(map(lambda x:x.strip().split(":"),filtered_list2))
 tup_list=[(i.strip(),int(j)) for i,j in filtered_list3]
 print(tup_list)
 tup_sub=[i for i,j in tup_list]
-print(tuple(tup_sub))
+#print(tuple(tup_sub))
+if tup_sub.count("SANSKRIT")>0:
+    i=tup_sub.index("SANSKRIT")
+else:
+    tup_list.append(("SANSKRIT",0))
+print(tup_list)
