@@ -1,0 +1,14 @@
+raw_records = [
+    "  Math : 10 pts ",
+    "invalid_record",
+    "MATH: 5 PTS",
+    " English : 8 pts",
+    "english: 12 pts ",
+    "Science: 20 pts",
+    "history: 15",
+    "  math : 3 pts ",
+]
+
+min_score = 4
+filtered_list=list(filter(lambda x:":" in x and x,raw_records))
+print(filtered_list)
