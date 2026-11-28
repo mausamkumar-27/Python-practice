@@ -45,5 +45,5 @@ def recursive_product(nums):
         return nums[0]*recursive_product(nums[1:])
 prod_list=[recursive_product(s) for s in my_dict.values()]
 print(prod_list)
-zip_list=list(zip(list(unique_sub),prod_list))
-print(zip_list)
+zip_tuple=tuple(zip(my_dict.keys(),prod_list))
+print(zip_tuple)
