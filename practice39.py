@@ -25,5 +25,5 @@ if tup_sub.count("math")>0:
 else:
     tup_list.append(("math",0))
 print(tup_list)
-unique_sub={i for i,j in tup_list if i.isalnum()}
+unique_sub={i for i,j in tup_list if i.isalpha()}
 print(unique_sub)
