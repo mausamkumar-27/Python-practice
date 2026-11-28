@@ -49,6 +49,10 @@ prod_list=[recursive_product(s) for s in my_dict.values()]
 zip_tuple=tuple(zip(my_dict.keys(),prod_list))
 #print(zip_tuple)
 total=reduce(lambda x,y:x+int(y[1]),zip_tuple,0)
-print("Total Sum: ",total)
-final_list=["i.upper():int(j)" for i,j in zip_tuple]
+#print("Total Sum: ",total)
+final_list=[]
+for i,j in zip_tuple:
+    final_list.append(f"{i.upper()}:{j}")
+print(my_dict)
+print("Total: ",total)
 print("Summary: ",final_list)
