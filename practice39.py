@@ -13,4 +13,4 @@ min_score = 4
 filtered_list=list(filter(lambda x:":" in x and x.strip().lower().endswith("pts"),raw_records))
 #print(filtered_list)
 filtered_list2=list(map(lambda x:x.strip().lower().rstrip("pts"),filtered_list))
-print(filtered_list2)
+#print(filtered_list2)
