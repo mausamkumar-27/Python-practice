@@ -17,15 +17,15 @@ filtered_list2=list(map(lambda x:x.strip().lower().rstrip("pts"),filtered_list))
 filtered_list3=list(map(lambda x:x.strip().split(":"),filtered_list2))
 #print(filtered_list3)
 tup_list=[(i.strip(),int(j)) for i,j in filtered_list3]
-print(tup_list)
+#print(tup_list)
 tup_sub=[i for i,j in tup_list]
-print(tuple(tup_sub))
+#print(tuple(tup_sub))
 if tup_sub.count("math")>0:
     i=tup_sub.index("math")
 else:
     tup_list.append(("math",0))
-print(tup_list)
-#unique_sub={i for i,j in tup_list if i.isalpha()}
-#print(unique_sub)
+#print(tup_list)
+unique_sub={i for i,j in tup_list if i.isalpha()}
+print(unique_sub)
 #unique_sub.discard("science")
 #print(unique_sub)
