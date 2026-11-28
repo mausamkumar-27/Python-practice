@@ -16,5 +16,5 @@ filtered_list2=list(map(lambda x:x.strip().lower().rstrip("pts"),filtered_list))
 #print(filtered_list2)
 filtered_list3=list(map(lambda x:x.strip().split(":"),filtered_list2))
 #print(filtered_list3)
-tup_list=[(i,int(j)) for i,j in filtered_list3]
+tup_list=[(i.strip(),int(j)) for i,j in filtered_list3]
 print(tup_list)
