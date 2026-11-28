@@ -30,6 +30,8 @@ unique_sub={i for i,j in tup_list if i.isalpha()}
 unique_sub.discard("science")
 #print(unique_sub)
 my_dict={key:[j for s,j in tup_list if j>=min_score and key==s] for key in sorted(unique_sub)}
-print(my_dict)
+#print(my_dict)
 my_dict.setdefault("bonus",[5])
-print(my_dict)
+#print(my_dict)
+my_dict.pop("bonus")
+#print(my_dict)
