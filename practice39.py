@@ -34,5 +34,14 @@ my_dict={key:[j for s,j in tup_list if j>=min_score and key==s] for key in sorte
 my_dict.setdefault("bonus",[5])
 #print(my_dict)
 b=my_dict.pop("bonus")
-print(my_dict)
-print(b)
+#print(my_dict)
+#print(b)
+def recursive_product(nums):
+    if len(nums)==0:
+        return 0
+    elif len(nums)==1:
+        return nums[0]
+    else:
+        return nums[0]*recursive_product(nums[1:])
+prod_list=[recursive_product(s) for s in my_dict.values()]
+print(prod_list)
