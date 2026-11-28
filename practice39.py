@@ -27,5 +27,5 @@ else:
 #print(tup_list)
 unique_sub={i for i,j in tup_list if i.isalpha()}
 print(unique_sub)
-updated_set=unique_sub.discard("science")
-print(updated_set)
+unique_sub.discard("science")
+print(unique_sub)
