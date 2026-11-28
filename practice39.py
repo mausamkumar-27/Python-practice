@@ -26,6 +26,6 @@ else:
     tup_list.append(("math",0))
 #print(tup_list)
 unique_sub={i for i,j in tup_list if i.isalpha()}
-print(unique_sub)
-#unique_sub.discard("science")
 #print(unique_sub)
+unique_sub.discard("science")
+print(unique_sub)
