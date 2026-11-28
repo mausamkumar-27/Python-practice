@@ -29,4 +29,5 @@ unique_sub={i for i,j in tup_list if i.isalpha()}
 #print(unique_sub)
 unique_sub.discard("science")
 print(unique_sub)
-my_dict={ key:[j for s,j in tup_list if j>=min_score and key==s] for key in updated_set}
+my_dict=sorted({ key:[j for s,j in tup_list if j>=min_score and key==s] for key in unique_sub})
+print(my_dict)
