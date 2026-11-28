@@ -50,3 +50,5 @@ zip_tuple=tuple(zip(my_dict.keys(),prod_list))
 #print(zip_tuple)
 total=reduce(lambda x,y:x+int(y[1]),zip_tuple,0)
 print("Total Sum: ",total)
+final_list=["i.upper():int(j)" for i,j in zip_tuple]
+print("Summary: ",final_list)
